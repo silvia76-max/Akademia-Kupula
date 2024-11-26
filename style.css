@@ -13,45 +13,47 @@
     }
     
   /* ---- Barra de navegacion ---- */
-
-  .navbar {
-    width: 100%;
-    height:auto;
-    display:flex;
-    flex-direction: row;
-    padding: 10px 10px;
-    background-color:black;
+  .header {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 20px;
+    background-color: black;
     color: goldenrod;
     border-radius: 10px;
      }
-
-.logo-img {
-    height: 300px;
-    width: 300px;
+ .logo {
+    width: 300px; 
+    height: auto;
     margin: 30px;
      }
-
- .texto {
-      display: block;
-      margin: 30px;
-       }
-
-.nav-title {
-    font-size: 50px;
-    color:goldenrod;
-  
+.titulo {
+    font-size: 4rem;
+    margin: 0 20px;
     }
- .nav-parrafo {
-    font-size: 20px;
-    color:goldenrod ;
-  }  
+ .imagen {
+    width: 300px; 
+    height: auto;
+    border-radius: 10px;
+    margin: 30px;
+    }
+
+.navbar {
+    width: 100%;
+    height:auto;
+    display:flex;
+    justify-content: space-evenly;
+     background-color:black;
+    color: goldenrod;
+    border-radius: 10px;
+    margin-top: 10px;
+       }
 .menu {
-    list-style: none;
+    list-style-type:none;
     margin: 10px;
     padding: 10px;
-    display: contents;
-   align-items: last baseline;
-    gap: 15px;
+    display: flex;
+    gap: 10rem;
   }
 
 .menu li {
@@ -59,16 +61,15 @@
    padding: 5px 5px;
    font-size: 20px; 
    color: black; 
-   background-color: goldenrod; 
-   text-decoration: none; 
+   background-color: goldenrod;
    border-radius: 5px; 
    cursor: pointer; 
    transition: background-color 0.3s ease;
   }
 
 .menu a {
-   text-decoration: none;
     color:black;
+    text-decoration: none;
     font-size: 20px;
     cursor: pointer;
     transition: color 0.3s;
@@ -91,8 +92,8 @@
 }
 
 .section-imagen {
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: auto;
 }
 
   /*Footer*/
