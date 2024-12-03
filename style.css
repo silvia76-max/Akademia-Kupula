@@ -10,6 +10,7 @@
    }
 
 * {
+<<<<<<< HEAD
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -19,6 +20,17 @@
     a {
       color: var(--goldenrod);
       text-decoration: none;
+=======
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+ .montserrat-uniquifier> {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight:"";
+      font-style: normal;
+>>>>>>> fd1bff8ae64928309991e5c9b6150e36b3602d61
     }
     
     a:hover {
@@ -26,7 +38,32 @@
     } 
 
   /* ---- Barra de navegacion ---- */
+  .header {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 20px;
+    background-color: black;
+    color: goldenrod;
+    border-radius: 10px;
+     }
+ .logo {
+    width: 300px; 
+    height: auto;
+    margin: 30px;
+     }
+.titulo {
+    font-size: 4rem;
+    margin: 0 20px;
+    }
+ .imagen {
+    width: 300px; 
+    height: auto;
+    border-radius: 10px;
+    margin: 30px;
+    }
 
+<<<<<<< HEAD
    header {
    position: sticky;
     top: 0;
@@ -58,6 +95,47 @@
     cursor: pointer;
     transition: 3ms;
     user-select: none;
+=======
+.navbar {
+    width: 100%;
+    height:auto;
+    display:flex;
+    justify-content: space-evenly;
+     background-color:black;
+    color: goldenrod;
+    border-radius: 10px;
+    margin-top: 10px;
+       }
+.menu {
+    list-style-type:none;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 10rem;
+  }
+
+.menu li {
+   margin: auto;
+   padding: 5px 5px;
+   font-size: 20px; 
+   color: black; 
+   background-color: goldenrod;
+   border-radius: 5px; 
+   cursor: pointer; 
+   transition: background-color 0.3s ease;
+  }
+
+.menu a {
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+   }
+
+.menu a:hover {
+ color:greenyellow;
+>>>>>>> fd1bff8ae64928309991e5c9b6150e36b3602d61
   }
   .navigator input:checked  ~ ul{
     list-style: none;
@@ -84,8 +162,22 @@
        }
   
   /* ---- Fin barra navegacion---- */
+  
+ .container1 {
+  width: 100%;
+ }
+.seccion-h2 {
+ margin: auto;
+}
 
+.section-parrafo {
+  font-size: medium;
+}
 
+.section-imagen {
+  width: 100px;
+  height: auto;
+}
 
   /*Footer*/
 
