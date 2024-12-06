@@ -74,6 +74,7 @@
     width: 100%;
     height:auto;
     display:flex;
+    justify-content: space-evenly;
     padding: 10px;
     background-color:rgb(23, 23, 23);
     border-radius: 10px;
@@ -122,7 +123,7 @@
 }
 
 /* Opcional: Mostrar el menú para pantallas más grandes */
-@media (min-width: 768px) {
+@media (min-width: 360px) {
     .menu {
         display: flex;
         flex-direction: row;
