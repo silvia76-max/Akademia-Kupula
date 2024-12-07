@@ -8,26 +8,22 @@ margin: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
 }
 .contacto {
-    padding: 40px 20px;
     background-color:rgb(23, 23, 23);
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .texto-interno {
-    max-width: 800px;
-    margin: 0 auto;
     text-align: center;
+  
 }
 
 .texto-interno h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: goldenrod;
-    gap: 10px;
+
 }
 
 .texto-interno p {
@@ -35,8 +31,8 @@ margin: 0;
     line-height: 1.6;
     color:goldenrod;
     margin-bottom: 20px;
-    width: 60%;
-   margin-left: 150px;
+    width: 50%;
+    margin-left: 18rem;
 
 }
 
@@ -56,16 +52,36 @@ margin: 0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 40px; 
+    height: 40px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    margin-left: 100px;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2); 
+    opacity: 0.8; 
+}
+
  .formulario {
      border-radius: 3rem;
      padding: 1rem;
      display: flex;
+     flex-wrap: nowrap;
      flex-direction: column;
-     width: 50%;
+     width: 60%;
     }
     section.formulario h2{
         font-size: 2rem;
-        margin-bottom: 20px;
+        margin:15px 20px;
         color: goldenrod;
      }
     section.formulario p {
@@ -74,12 +90,12 @@ margin: 0;
         color:goldenrod;
         margin-bottom: 20px;
         width: 50%;
-        gap: 15px;
+       
   }
  .formulario form {
      display: flex;
      flex-direction: column;
-     margin: 1.5rem 0 0;
+     margin: 0.5rem 0 0;
  }
  
  .formulario label {
@@ -91,14 +107,14 @@ margin: 0;
    font-size: 1.2rem;
    color: var(--goldenrod);
    padding: 1rem;
-   margin: 1rem 0;
+   margin: 0.5rem 0;
  }
  
  .formulario textarea {
-     height: 60px; 
+     height: 50px; 
      padding: 1rem;
      font-size: 1.2rem;
-     margin: 1rem 0;
+     margin: 0.5rem 0;
      color: var(--goldenrod);
  }
  
