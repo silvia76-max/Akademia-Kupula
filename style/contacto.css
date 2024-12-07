@@ -1,1 +1,120 @@
 akademia.css
+ main {
+padding: 0;
+margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.contacto {
+    padding: 40px 20px;
+    background-color:rgb(23, 23, 23);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.texto-interno {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.texto-interno h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: goldenrod;
+    gap: 10px;
+}
+
+.texto-interno p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color:goldenrod;
+    margin-bottom: 20px;
+    width: 60%;
+   margin-left: 150px;
+
+}
+
+.imagen-entrada {
+    width: 200x;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mapa {
+    margin-top: 20px;
+}
+
+.mapa iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ .formulario {
+     border-radius: 3rem;
+     padding: 1rem;
+     display: flex;
+     flex-direction: column;
+     width: 50%;
+    }
+    section.formulario h2{
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: goldenrod;
+     }
+    section.formulario p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color:goldenrod;
+        margin-bottom: 20px;
+        width: 50%;
+        gap: 15px;
+  }
+ .formulario form {
+     display: flex;
+     flex-direction: column;
+     margin: 1.5rem 0 0;
+ }
+ 
+ .formulario label {
+     font-size: 1.5rem;
+     color: var(--goldenrod);
+ }
+ 
+ .formulario input {
+   font-size: 1.2rem;
+   color: var(--goldenrod);
+   padding: 1rem;
+   margin: 1rem 0;
+ }
+ 
+ .formulario textarea {
+     height: 60px; 
+     padding: 1rem;
+     font-size: 1.2rem;
+     margin: 1rem 0;
+     color: var(--goldenrod);
+ }
+ 
+ .button {
+     margin: 2rem 0 0;
+     background-color: goldenrod; 
+     color: black;
+     font-size: 1.5rem;
+     border-radius: 15px;
+     cursor: pointer;
+ }
+ 
+ .button:hover {
+     margin: 2rem 0 0;
+     background-color: goldenrod;
+     cursor: pointer;
+     color: greenyellow; 
+     font-size: 2rem;
+ }

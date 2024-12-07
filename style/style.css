@@ -113,7 +113,27 @@
  color:greenyellow;
 
   }
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
   
+  .next-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: goldenrod;
+    color:black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .next-button:hover {
+   color: greenyellow;
+  }
 
 /* Opcional: Mostrar el menú para pantallas más grandes */
 @media (min-width: 360px) {
