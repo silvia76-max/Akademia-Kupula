@@ -20,24 +20,27 @@
     width: 18%;
     padding: 1rem;
     text-align: center;
-    background-color:rgba(255, 200, 2, 0.748);
+    background-color:rgb(253, 237, 181);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-bottom: 1rem;
   }
-  
+   .card-alumnos:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px gold (0, 0, 0, 0.15);
+        }
   .card-alumnos img {
     border-radius: 0.5rem;
     width: 100%;
-    box-shadow: greenyellow;
+    box-shadow: goldenrod;
   }
 
   .card-alumnos h3 {
     margin-top: 0.6px;
     font-size: 1.5em;
-    color: greenyellow;
+    color: black
   }
 
 
@@ -46,9 +49,10 @@
     font-size: 1.1rem;
     text-align: center;
     color:rgb(0, 0, 0);
+    margin-bottom: 10px;
   }
 
-  .card-alumnos button {
+  .button {
     display: inline-block;
     padding: 10px 20px;
     border:3px gold;
@@ -61,8 +65,8 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  .card-alumnos button:hover {
-    color: greenyellow;
+  .button:hover {
+    color:yellow;
    }
  
 
