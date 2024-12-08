@@ -1,3 +1,8 @@
+ .titulo-cursos{
+  font-size: 2rem;
+  font-style: bold;
+  color: goldenrod;
+ }
 .cards-container-alumnos {
     display: flex;
     flex-direction: row;
@@ -15,7 +20,7 @@
     width: 18%;
     padding: 1rem;
     text-align: center;
-    background-color: var(--backtrans);
+    background-color:rgba(254, 183, 4, 0.714);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -26,45 +31,41 @@
   .card-alumnos img {
     border-radius: 0.5rem;
     width: 100%;
-    box-shadow:var(--tyrian-purple);
+    box-shadow: goldenrod;
   }
 
   .card-alumnos h3 {
     margin-top: 0.6px;
     font-size: 1.5em;
-    color: var(--tyrian-purple);
+    color: gold;
   }
 
   .card-alumnos-invertida h3 {
     margin-top: 0.6px;
     font-size: 1.5em;
-    color: var(--celadon);
+    color: greenyellow;
   }
 
   .card-alumnos p {
     font-size: 1.1rem;
     text-align: center;
-    color: rgb(36, 36, 36);
+    color:rgb(0, 0, 0);
   }
   .card-alumnos-invertida p {
     font-size: 1.1rem;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: greenyellow;
   }
 
 
 
    @media only screen and (max-width: 530px) {
-    main {
-      margin: 2rem;
-      padding: 0;
-    }
+   
     .cards-container-alumnos {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       flex-wrap: wrap;
-
       width: 100%;
     }
 
@@ -74,7 +75,6 @@
       width: 100%;
       padding: 1rem;
       text-align: center;
-      background-color: var(--backtrans);
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
