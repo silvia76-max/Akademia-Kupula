@@ -39,12 +39,11 @@
  <!--CONTENIDO CENTRAL----------------------------------->
 
  <main>
-   <article>
-          <div class="container"></div>
-              <section class="contacto">
-                  <div class="texto-interno">
-                  <h2>¿Dónde estamos?</h2>
-                    <p>
+      <article class="container">
+            <section class="contacto">
+                 <div class="texto-interno">
+                  <h2 class="texto-interno">¿Dónde estamos?</h2>
+                    <p class="texto-interno">
                       La Akademia se encuentra situada en el Bilbaino barrio de Santutxu,
                       cerca de Basarrate, 
                       dispone de multiples conexiones en transporte publico,
@@ -52,7 +51,11 @@
                       animate a conocernos.
                       </p>
                     <img src="img/entrada-kupula.jpg" alt="Entrada a local Estetica" class="imagen-entrada">
-                    <div class="mapa">
+                 </div>
+          
+        
+         
+               <div class="mapa">
                       <iframe 
                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.9737406455483!2d-2.910631664458357!3d43.25197215020864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4e4c0c4decc1%3A0x32a07f372db1faa6!2sLa%20Kupula!5e0!3m2!1ses!2ses!4v1733573257971!5m2!1ses!2ses" 
                           width="250" 
@@ -73,48 +76,50 @@
                           <a href="https://www.email.com" target="_blank" aria-label="email">
                             <img src="img/email.jpg" alt="email"></a>
                           </div>
-                        </div>
-              </section>
+       </section>  
           <section class="formulario">
-            <h2>Tienes dudas ¿?</h2>
-            <p>
-              Quieres mas informacion, tienes dudas o quieres ponerte en contacto con nosotros,
-              utiliza nuestro formulario de contacto, estaremos encantados de atenderte.
-            </p>
-            <div class="formulario">
-                  <form action="formulario.php" method="post">
-                      <label for="nombre">Nombre y Apellido
+                <h2>¿Tienes dudas?</h2>
+                  <p>
+                    Quieres mas informacion, tienes dudas o quieres ponerte en contacto con nosotros,
+                    utiliza nuestro formulario de contacto, estaremos encantados de atenderte.
+                  </p>
+
+                  <div class="formulario">
+                      <form action="formulario.php" method="post">
+
+                          <label for="nombre">Nombre y Apellido
+                            <span class="obligatorio">*</span>
+                          </label>
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                                    placeholder="Escribe tu nombre y apellido" />
+
+                          <label for="email" class="colocar_email">Email
+                            <span class="obligatorio">*</span>
+                          </label>
+                       <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+
+                          <label for="telefono" class="colocar_telefono">Teléfono
+                          </label>
+                       <input type="telf" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono" />
+
+                      <label for="mensaje" class="colocar_mensaje">Mensaje
                         <span class="obligatorio">*</span>
                       </label>
-                  <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
-                    placeholder="Escribe tu nombre y apellido" />
-
-                    <label for="email" class="colocar_email">Email
-                      <span class="obligatorio">*</span>
-                    </label>
-                  <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-
-                    <label for="telefono" class="colocar_telefono">Teléfono
-                    </label>
-                  <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono" />
-
-                  <label for="mensaje" class="colocar_mensaje">Mensaje
-                    <span class="obligatorio">*</span>
-                  </label>
-                  <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                      
+                   <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
                     placeholder="Deja aquí tu comentario..."></textarea>
+
                   <p class="aviso">
                     <span class="obligatorio"> * </span>los campos son
                     obligatorios.
                   </p>
 
-                  <button type="submit" name="enviar_formulario" id="enviar" class="button">Enviar
-                </button>
+                  <button type="submit" name="enviar_formulario" id="enviar" class="button">Enviar</button>
         
               </form>
           </div>
       </section>
-   </article>
+  </article>
 </main>
 
 

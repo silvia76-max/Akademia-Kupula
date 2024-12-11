@@ -6,8 +6,8 @@ margin: 0;
 
 .container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction:row;
+    align-items: start;
 }
 .contacto {
     background-color:rgb(23, 23, 23);
@@ -16,7 +16,7 @@ margin: 0;
 
 .texto-interno {
     text-align: center;
-  
+   color: goldenrod;
 }
 
 .texto-interno h2 {
@@ -40,12 +40,15 @@ margin: 0;
     width: 200x;
     height: 200px;
     border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .mapa {
-    margin-top: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+
 }
 
 .mapa iframe {
@@ -54,6 +57,7 @@ margin: 0;
 }
 .social-icons {
     display: flex;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -61,7 +65,7 @@ margin: 0;
     width: 40px; 
     height: 40px;
     transition: transform 0.3s ease, opacity 0.3s ease;
-    margin-left: 100px;
+  
     margin-top: 40px;
     border-radius: 5px;
 }

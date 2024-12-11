@@ -18,7 +18,7 @@
    animation: slide-animation 15s infinite;
 }
 
-.slide {
+.carrusel {
     flex: 0 0 100%;
     background-image: url(img/salonkupula.jpg);
     background-size: cover;
@@ -27,7 +27,7 @@
     opacity: 0;
 }
 
-.slide.active {
+.carrusel {
     opacity: 1;
 }
 

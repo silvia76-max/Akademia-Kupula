@@ -1,0 +1,63 @@
+
+.contenedor {
+   width: 100vw;
+    margin: 20px auto;
+    padding: 0 15px;
+    background-color: rgb(15, 15, 15);
+}
+
+.contenedor h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: goldenrod;
+}
+
+.contenedor p {
+    font-size: 1.2rem;
+    color: goldenrod;
+}
+
+
+.post {
+    display: flex;
+    background: #f8d77d;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.post img {
+    max-width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.post-contenido {
+    padding: 15px;
+    flex: 1;
+}
+
+.post h2 {
+    margin-top: 0;
+    color: goldenrod;
+}
+
+.post p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: black;
+    color: gold;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #575757;
+}
