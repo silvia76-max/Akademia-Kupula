@@ -100,75 +100,39 @@
   }
 
 .menu a {
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  display: inline-block;
-  text-align: center;
-  font-weight: bold;
-  padding: 0.7em 2em;
-  border: 3px solid goldenrod;
-  border-radius: 2px;
-  position: relative;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-  color:black;
-  text-decoration: none;
-  transition: 0.3s ease all;
-  z-index: 1;} 
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+   }
 
 .menu a:hover {
  color:greenyellow;
- }
-  .menu a :before {
-    transition: 0.5s all ease;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    opacity: 0;
-    content: '';
-    background-color: goldenrod;
-    z-index: -1;
-  }
-  
- .menu a :hover, button:focus {
-    color: gold;
-  }
-  
- .menu a :hover:before, menu a:focus:before {
-    transition: 0.5s all ease;
-    left: 0;
-    right: 0;
-    opacity: 1;
-  }
-  
- .menu a active {
-    transform: scale(0.9);
-  }
-  .next-button {margin-top: 30px;
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    display: inline-block;
-    text-align: center;
-    font-weight: bold;
-    padding: 0.7em 2em;
-    border: 3px solid goldenrod;
-    border-radius: 2px;
-    position: relative;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-    color:gold;
-    text-decoration: none;
-    transition: 0.3s ease all;
-    z-index: 1;} 
 
-    .next-button:hover,next-button:focus {
-      color: gold;
-      transform: translateY(-5px);
-    }
+  }
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
   
+  .next-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: goldenrod;
+    color:black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
   
+  .next-button:hover {
+   color: greenyellow;
+  }
+
 /* Opcional: Mostrar el menú para pantallas más grandes */
 @media (min-width: 360px) {
     .menu {

@@ -39,7 +39,7 @@
  <!--CONTENIDO CENTRAL----------------------------------->
 
  <main>
-      <article class="container">
+  <article class="container">
             <section class="contacto">
                  <div class="texto-interno">
                   <h2 class="texto-interno">¿Dónde estamos?</h2>
@@ -85,40 +85,47 @@
                   </p>
 
                   <div class="formulario">
-                      <form action="formulario.php" method="post">
-
-                          <label for="nombre">Nombre y Apellido
-                            <span class="obligatorio">*</span>
-                          </label>
-                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
-                                    placeholder="Escribe tu nombre y apellido" />
-
-                          <label for="email" class="colocar_email">Email
-                            <span class="obligatorio">*</span>
-                          </label>
-                       <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-
-                          <label for="telefono" class="colocar_telefono">Teléfono
-                          </label>
-                       <input type="telf" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono" />
-
-                      <label for="mensaje" class="colocar_mensaje">Mensaje
-                        <span class="obligatorio">*</span>
-                      </label>
-                      
-                   <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
-                    placeholder="Deja aquí tu comentario..."></textarea>
-
-                  <p class="aviso">
-                    <span class="obligatorio"> * </span>los campos son
-                    obligatorios.
-                  </p>
-
-                  <button type="submit" name="enviar_formulario" id="enviar" class="button">Enviar</button>
-        
-              </form>
-          </div>
-      </section>
+                    <div class="form-card1">
+                      <div class="form-card2">
+                        <form class="form">
+                          <p class="form-heading">Formulario de contacto</p>
+                    
+                          <div class="form-field">
+                            <input required="" placeholder="Nombre" class="input-field" type="text" />
+                          </div>
+                    
+                          <div class="form-field">
+                            <input
+                              required=""
+                              placeholder="Email"
+                              class="input-field"
+                              type="email"
+                            />
+                          </div>
+                    
+                          <div class="form-field">
+                            <input
+                              required=""
+                              placeholder="Telefono"
+                              class="input-field"
+                              type="text"
+                            />
+                          </div>
+                    
+                          <div class="form-field">
+                            <textarea
+                              required=""
+                              placeholder="Escriba aqui su mensaje"
+                              cols="30"
+                              rows="3"
+                              class="input-field"
+                            ></textarea>
+                          </div>
+                    
+                          <button class="sendMessage-btn">Enviar mensaje</button>
+                        </form>
+                      </div>
+                    </div>   
   </article>
 </main>
 
