@@ -13,14 +13,14 @@
   }
 
   .card-alumnos {
-    border: 1.5px solid greenyellow;
+    border: 1px solid goldenrod;
     border-radius: 2rem;
     max-width: 30rem;
     min-width: 20rem;
     width: 18%;
     padding: 1rem;
     text-align: center;
-    background-color:rgb(253, 237, 181);
+    background-color:rgba(46, 46, 46, 0.445);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -28,11 +28,11 @@
     margin-bottom: 1rem;
   }
    .card-alumnos:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 10px gold (0, 0, 0, 0.15);
+      transform: translateY(-15px);
+      box-shadow: 0 10px 20px goldenrod (0, 0, 0, 0.25);
         }
   .card-alumnos img {
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     width: 100%;
     box-shadow: goldenrod;
   }
@@ -40,7 +40,7 @@
   .card-alumnos h3 {
     margin-top: 0.6px;
     font-size: 1.5em;
-    color: black
+    color: gold
   }
 
 
@@ -48,7 +48,7 @@
   .card-alumnos p {
     font-size: 1.1rem;
     text-align: center;
-    color:rgb(0, 0, 0);
+    color:gold;
     margin-bottom: 10px;
   }
 
@@ -80,10 +80,10 @@
     }
 
     .card-alumnos {
-      border: 1px solid #cccccc;
+      border: 3px solid gold;
       border-radius: 2rem;
       width: 100%;
-      padding: 1rem;
+      padding: 3rem;
       text-align: center;
       box-sizing: border-box;
       display: flex;
