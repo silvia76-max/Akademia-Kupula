@@ -90,9 +90,10 @@
   position: absolute;
   top: 50px;
   right: 0;
-  background: #fff;
+  background: #272727;
   border: 1px solid #ccc;
   padding: 15px;
+  color: goldenrod;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
@@ -137,7 +138,7 @@
 
 
 .shadow__btn {
-  margin-left: 750px;
+
   padding: 8px 16px;
   font-size: 16px;
   color: black;
@@ -200,7 +201,7 @@ input[type="submit"]:hover {
     margin: 5px;
     }
 .menu {
-    list-style-type:none;
+   list-style-type:none;
    display: flex;
    gap: 25px;
    cursor: pointer;
@@ -281,23 +282,12 @@ input[type="submit"]:hover {
     transition: 0.3s ease all;
     z-index: 1;} 
 
-    .next-button:hover,next-button:focus {
+   .next-button:hover,next-button:focus {
       color: gold;
       transform: translateY(-5px);
     }
   
-  
-/* Opcional: Mostrar el menú para pantallas más grandes */
-@media (min-width: 360px) {
-    .menu {
-        display: flex;
-        flex-direction: row;
-    }
-    .menu li {
-        margin: 0 10px;
-    }
-  
-}
+
   
   /* ---- Fin barra navegacion---- */
 
