@@ -99,6 +99,7 @@ margin-top: 20px;
     padding-bottom: 0.4em;
     background-color: #171717;
     border-radius: 20px;
+   
   }
   
   .form-heading {
@@ -112,18 +113,12 @@ margin-top: 20px;
   
   .form-field {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 1.5em;
     border-radius: 10px;
     padding: 0.6em;
     border: none;
     outline: none;
-<<<<<<< HEAD
     color: goldenrod;
-=======
-    color:gold;
->>>>>>> 34932bb5db72011f4959434a4d72f56f88215264
     background-color: #171717;
     box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
   }
@@ -133,11 +128,7 @@ margin-top: 20px;
     border: none;
     outline: none;
     width: 100%;
-<<<<<<< HEAD
     color: goldenrod;
-=======
-    color: gold;
->>>>>>> 34932bb5db72011f4959434a4d72f56f88215264
     padding-inline: 1em;
   }
   
@@ -167,6 +158,7 @@ margin-top: 20px;
     background-image: linear-gradient(163deg, goldenrod 0%, goldenrod 100%);
     border-radius: 22px;
     transition: all 0.3s;
+   margin: 30px;
    
   }
   
