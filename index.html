@@ -24,9 +24,9 @@
           <h2 class="titulo">Akademia la Kupula</h2></div>
           <img src="img/tania7.jpg" alt="Imagen de encabezado" class="imagen">
      </header>
+     
    <nav class="navbar">
-            <!-- Formulario de registro -->
-    <div class="container">
+      <div class="container">
       <button class="shadow__btn" id="toggleButton">Registrate</button>
       <div class="form-container" id="formContainer">
           <h2>Formulario de Registro</h2>
@@ -38,21 +38,6 @@
           </form>
       </div>
     </div>
-    <div class="login-container">
-      <button id="login-button" class="login-icon">
-          <img src="img/login4.png" alt="Inicio de Sesión">
-      </button>
-      <div id="login-form" class="login-form hidden">
-          <form>
-              <h2>Iniciar Sesión</h2>
-              <label for="username">Usuario</label>
-              <input type="text" id="username" name="username" required>
-              <label for="password">Contraseña</label>
-              <input type="password" id="password" name="password" required>
-              <button type="submit">Entrar</button>
-          </form>
-      </div>
-  </div>
            <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="akademia.html">Akademia</a></li>
@@ -131,20 +116,7 @@
   </footer>
 <!--FIN footer  section------->
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const loginButton = document.getElementById("login-button");
-    const loginForm = document.getElementById("login-form");
 
-    loginButton.addEventListener("click", () => {
-        loginForm.classList.toggle("hidden");
-    });
-
-    document.addEventListener("click", (event) => {
-        if (!loginForm.contains(event.target) && !loginButton.contains(event.target)) {
-            loginForm.classList.add("hidden");
-        }
-    });
-});
   // JavaScript para manejar el despliegue del formulario
   const toggleButton = document.getElementById('toggleButton');
   const formContainer = document.getElementById('formContainer');
