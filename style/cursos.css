@@ -1,3 +1,4 @@
+
 .login-container {
   position: relative;
 }
@@ -140,19 +141,19 @@
 
 @media only screen and (max-width: 1200px) {
   .card-alumnos {
-    width: 22%;
+    width: 30%;
   }
 }
 
 @media only screen and (max-width: 992px) {
   .card-alumnos {
-    width: 30%;
+    width: 45%;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .card-alumnos {
-    width: 45%;
+    width: 65%;
   }
 }
 
