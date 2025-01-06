@@ -15,12 +15,11 @@
     height: 100%;
     width: 100%;
     display: flex;
-   animation: slide-animation 15s infinite;
 }
 
 .carrusel {
     flex: 0 0 100%;
-    background-image: url(img/salonkupula.jpg);
+    background-image: url(https://lh3.googleusercontent.com/p/AF1QipOqQOtlMUrTnH2dlwifgQxxdxpiSGqw7MNKmRpH=s1360-w1360-h1020);
     background-size: cover;
     background-position: center;
     transition: opacity 1s ease-in-out;
@@ -123,24 +122,24 @@
 .fila {
     display: flex;
     align-items: center;
-    gap: 2rem; /* Espacio entre imagen y texto */
+    gap: 2rem; 
 }
 
 .fila.inversa {
-    flex-direction: row-reverse; /* Invierte el orden */
+    flex-direction: row-reverse; 
 }
 
 /* Imagen */
 .imagen img {
     width: 100%;
-    max-width: 300px; /* Tamaño máximo de la imagen */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    max-width: 300px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 /* Texto */
 .texto {
-    flex: 1; /* Ocupa el resto del espacio */
+    flex: 1; 
 }
 
 .texto h2 {

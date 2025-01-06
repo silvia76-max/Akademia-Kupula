@@ -259,12 +259,28 @@ footer {
  
 }
 
-.footer-content{
-   display: flex;
-   justify-content: space-around;
-   padding: 2rem;
-   align-items: center;
-  }
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.footer-section h5 {
+  color: goldenrod;
+  text-align: center;
+  margin-bottom: 1rem; /* Añade un margen inferior para separar el h5 del ul */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  color: goldenrod;
+}
+
+.footer-section ul li {
+  margin: 6px 0; /* Añade margen vertical para los elementos de la lista */
+  color: goldenrod;
+}
 
 .footer-section img{
     border-radius: 10px;
@@ -284,24 +300,6 @@ footer {
     font-size: 16px;
     
 }
-
-.footer-section h5{
-  color:goldenrod;
-  
-}
-
-.footer-section ul{
-   list-style: none;
-   padding: 0;
-   color:goldenrod;
-   
-}
-
-.footer-section ul li{
-     margin: 6px;
-     color:goldenrod;  
- 
-    }
 
 .footer { 
   position: absolute; 
