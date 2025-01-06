@@ -300,6 +300,7 @@ footer {
 .footer-section ul li{
      margin: 6px;
      color:goldenrod;  
+ 
     }
 
 .footer { 
@@ -316,7 +317,7 @@ footer {
 .footer-bottom img {
   border-radius: 7px;
 }
-.footer-bottom > p {
+.footer-bottom  p {
   text-align: center;
   margin: 0 auto;
 
