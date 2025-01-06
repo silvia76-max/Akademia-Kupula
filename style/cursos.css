@@ -71,100 +71,134 @@
   color: goldenrod;
 }
 
-/* Contenedor de las tarjetas */
 .cards-container-alumnos {
-  display: flex; 
-  flex-wrap: nowrap; 
-  overflow-x: scroll; 
-  gap: 20px; 
-  scroll-snap-type: x mandatory; 
-  padding: 10px; 
-  margin: 0 auto; 
-  max-width: 100%; 
-  box-sizing: border-box; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 5rem 0;
+  width: 100%;
+  overflow: hidden;
 }
 
-/* Mostrar barra de desplazamiento */
-.cards-container-alumnos::-webkit-scrollbar {
-  height: 8px; 
-}
-
-.cards-container-alumnos::-webkit-scrollbar-thumb {
-  background-color: goldenrod; 
-  border-radius: 4px; 
-}
-
-.cards-container-alumnos::-webkit-scrollbar-track {
-  background-color: #272727; 
-}
-
-/* Tarjetas individuales */
 .card-alumnos {
-  flex: 0 0 90%; 
-  max-width: 300px; 
-  min-width: 250px; 
-  scroll-snap-align: start; 
   border: 1px solid goldenrod;
   border-radius: 2rem;
-  background-color: rgba(46, 46, 46, 0.445);
-  text-align: center;
-  box-sizing: border-box;
+  max-width: 30rem;
+  min-width: 20rem;
+  width: 18%;
   padding: 1rem;
+  text-align: center;
+  background-color: rgba(46, 46, 46, 0.445);
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.card-alumnos:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 10px 20px goldenrod (0, 0, 0, 0.25);
 }
 
 .card-alumnos img {
   border-radius: 2rem;
   width: 100%;
-  height: auto;
   box-shadow: goldenrod;
 }
 
 .card-alumnos h3 {
+  margin-top: 0.6px;
   font-size: 1.5em;
   color: gold;
-  margin-top: 0.6rem;
 }
 
 .card-alumnos p {
   font-size: 1.1rem;
+  text-align: center;
   color: gold;
-  margin: 0.5rem 0;
+  margin-bottom: 10px;
 }
 
-.card-alumnos .button {
-  margin-top: 10px;
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 3px gold;
+  background-color: black;
+  color: goldenrod;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Ajuste del contenedor principal */
-main {
-  max-width: 100%; 
-  overflow-x: hidden; 
-  padding: 0 15px; 
-  box-sizing: border-box; 
+.button:hover {
+  color: yellow;
 }
 
-/* Ajuste responsive general */
-@media (max-width: 768px) {
+/* Estilo para tablet */
+@media only screen and (max-width: 1500px) and (min-width: 768px) {
+  .cards-container-alumnos {
+    display: grid; /* Usamos grid para mostrar 2 tarjetas por fila */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    gap: 1rem; /* Espacio entre las tarjetas */
+    max-height: 80vh; /* Limitar la altura del contenedor */
+    overflow-y: auto; /* Habilitar desplazamiento vertical */
+    padding: 1rem; /* Espacio interno */
+  }
+
+  .cards-container-alumnos::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+  }
+
+  .cards-container-alumnos::-webkit-scrollbar-thumb {
+    background-color: goldenrod; /* Color de la barra de desplazamiento */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+
+  .cards-container-alumnos::-webkit-scrollbar-track {
+    background-color: #272727; /* Fondo de la pista de desplazamiento */
+  }
+
   .card-alumnos {
-    flex: 0 0 80%; 
-  }
-  .titulo-cursos {
-    font-size: 1.5rem;
-    font-style: bold;
-    color: goldenrod;
+    flex: none; /* Se desactiva flex ya que usamos grid */
+    width: 100%; /* Las tarjetas ocupan todo el espacio de la columna */
+    margin: 0; /* Eliminar márgenes adicionales */
   }
 }
 
-@media (max-width: 480px) {
-  .card-alumnos {
-    flex: 0 0 100%; 
+/* Estilo para móvil */
+@media only screen and (max-width: 768px) {
+  .cards-container-alumnos {
+    display: flex;
+    flex-direction: column; /* Las tarjetas se apilan en una columna */
+    justify-content: flex-start;
+    flex-wrap: nowrap; /* Evitar que las tarjetas cambien de línea */
+    max-height: 80vh; /* Limitar la altura del contenedor */
+    overflow-y: auto; /* Habilitar desplazamiento vertical */
+    gap: 1rem; /* Espacio entre tarjetas */
+    padding: 1rem; /* Espacio interno */
   }
-  .titulo-cursos {
-    font-size: 1rem;
-    font-style: bold;
-    color: goldenrod;
+
+  .cards-container-alumnos::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+  }
+
+  .cards-container-alumnos::-webkit-scrollbar-thumb {
+    background-color: goldenrod; /* Color de la barra de desplazamiento */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+
+  .cards-container-alumnos::-webkit-scrollbar-track {
+    background-color: #272727; /* Fondo de la pista de desplazamiento */
+  }
+
+  .card-alumnos {
+    flex: none; /* Se desactiva flex ya que usamos columna */
+    width: 100%; /* Las tarjetas ocupan todo el ancho del contenedor */
+    margin: 0; /* Eliminar márgenes adicionales */
   }
 }

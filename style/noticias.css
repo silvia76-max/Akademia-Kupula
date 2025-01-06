@@ -63,16 +63,23 @@
   .login-form button:hover {
     background-color: gold;
   }
+  article.post { 
+    display: flex; 
+    flex-direction: row;
+    margin-bottom: 15px;
+     align-items: center;
+     gap: 50px;
+     width: 100%; 
+    }
 .contenedor {
    width: 100vw;
-    margin: 5px auto;
-    padding: 0 15px;
-    background-color: rgb(15, 15, 15);
+    gap: 30px;
+    background-color: rgba(15, 15, 15, 0.974);
 }
 
 .contenedor h1 {
-    margin: 0;
-    font-size: 2.5rem;
+
+    font-size: 2rem;
     color: goldenrod;
 }
 
@@ -83,10 +90,11 @@
 
 
 .post {
+  height: auto;
     display: flex;
-    background: #f8d77d;
+    background: #f0eded14;
     margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(229, 245, 5, 0.1);
     border-radius: 10px;
 }
 
@@ -94,6 +102,9 @@
     max-width: 200px;
     object-fit: cover;
     border-radius: 10px;
+    margin-left: 40px;
+    box-shadow: 0 5px 15px rgb(218, 165, 32);
+ 
 
 }
 
@@ -104,12 +115,12 @@
 
 .post h2 {
     margin-top: 0;
-    color: goldenrod;
+    color: rgb(218, 165, 32);
 }
 
 .post p {
     margin: 10px 0;
-    color: #666;
+    color: gold;
 }
 
 .btn {
@@ -126,13 +137,15 @@
     background: #575757;
 
   }
-  /* Estilos generales que ya tienes aquí */
-...
+ 
 
 /* Estilo para tablets (pantallas de 768px a 1024px) */
 @media (max-width: 1024px) {
   .contenedor {
-    padding: 0 10px;
+    width: 100vw;
+    gap: 20px;
+    background-color: rgba(15, 15, 15, 0.974);
+  
   }
 
   .contenedor h1 {
@@ -144,13 +157,15 @@
   }
 
   .post {
-    flex-direction: column;
+    flex-direction:row;
     align-items: center;
+ 
   }
 
   .post img {
     max-width: 150px;
     margin-bottom: 10px;
+    margin-left: 20px;
   }
 
   .post-contenido {
@@ -189,11 +204,11 @@
   }
 
   .contenedor h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .contenedor p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .post {
@@ -204,6 +219,7 @@
 
   .post img {
     max-width: 120px;
+    margin-left: 10px;
   }
 
   .post-contenido {
@@ -211,11 +227,11 @@
   }
 
   .post h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .post p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .btn {
