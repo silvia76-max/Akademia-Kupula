@@ -124,4 +124,113 @@
 
 .btn:hover {
     background: #575757;
+
+  }
+  /* Estilos generales que ya tienes aquí */
+...
+
+/* Estilo para tablets (pantallas de 768px a 1024px) */
+@media (max-width: 1024px) {
+  .contenedor {
+    padding: 0 10px;
+  }
+
+  .contenedor h1 {
+    font-size: 2rem;
+  }
+
+  .contenedor p {
+    font-size: 1rem;
+  }
+
+  .post {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post img {
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+
+  .post-contenido {
+    padding: 10px;
+  }
+
+  .post h2 {
+    font-size: 1.5rem;
+  }
+
+  .post p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .login-form {
+    width: 200px;
+    font-size: 0.9rem;
+  }
+
+  .login-form input,
+  .login-form button {
+    padding: 7px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Estilo para móviles (pantallas de hasta 767px) */
+@media (max-width: 767px) {
+  .contenedor {
+    padding: 0 5px;
+  }
+
+  .contenedor h1 {
+    font-size: 1.8rem;
+  }
+
+  .contenedor p {
+    font-size: 0.9rem;
+  }
+
+  .post {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .post img {
+    max-width: 120px;
+  }
+
+  .post-contenido {
+    padding: 8px;
+  }
+
+  .post h2 {
+    font-size: 1.2rem;
+  }
+
+  .post p {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .login-form {
+    width: 180px;
+    font-size: 0.8rem;
+  }
+
+  .login-form input,
+  .login-form button {
+    padding: 5px;
+    font-size: 0.8rem;
+  }
 }
