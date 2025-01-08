@@ -118,13 +118,13 @@
 }
 
 /* Estilo para móvil */
-@media only screen and (max-width: 668px) {
+@media only screen and (max-width: 768px) {
   .cards-container-alumnos {
     display: flex;
     flex-direction: column; 
     justify-content: flex-start;
     flex-wrap: nowrap; 
-    max-height: 80vh; 
+    max-height: 75vh; 
     overflow-y: auto; 
     gap: 1rem;
     padding: 1rem; 
@@ -145,7 +145,7 @@
 
   .card-alumnos {
     flex: none; 
-    width: 50%; 
-    margin-left:25%;
+    width: 100%; 
+ 
   }
 }
