@@ -257,7 +257,7 @@ footer {
 
 /* fin de Footer*/
 /* Media query para dispositivos con un ancho de pantalla máximo de 768px */
-@media (max-width: 668px) {
+@media (max-width: 768px) {
 
   .header {
     width: 100%;
@@ -311,9 +311,8 @@ footer {
 
   .image-grid {
       grid-template-columns: repeat(3, 1fr); 
-      gap: 5px; 
-      margin: 50px;
-      margin-top: 0%;
+      gap: 0.5rem; 
+    
 
   }
   .image-grid img {
