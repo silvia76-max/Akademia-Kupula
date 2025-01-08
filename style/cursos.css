@@ -129,6 +129,12 @@
     gap: 1rem;
     padding: 1rem; 
   }
+  .titulo-cursos {
+    font-size: 1rem;
+    font-style: bold;
+    color: goldenrod;
+    margin-top: 10px;
+  }
 
   .cards-container-alumnos::-webkit-scrollbar {
     width: 10px; 
