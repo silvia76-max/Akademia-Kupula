@@ -24,18 +24,18 @@
   /* ---- Barra de navegacion ---- */
   .header {
     width: 100%;
-    height: 100px;
+    height: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(23, 23, 23);
     color: goldenrod;
-    padding: 20px;
+    padding: 10px;
 }
 
 .logo {
-    width: 100px; 
-    height: 100px;
+    width: 150px; 
+    height: 150px;
     border-radius: 20px;
     margin: 50px;
    box-sizing: border-box;
@@ -43,9 +43,9 @@
    color: goldenrod;
 }
 .imagen {
-   width: 100px; 
-   height: 100px;
-   border-radius: 30px;
+   width: 150px; 
+   height: 150px;
+   border-radius: 20px;
    margin: 50px;
    box-sizing: border-box;
    box-shadow: 4px 4px;
@@ -53,11 +53,10 @@
 }
 
 .titulo {
-font-size: 2rem;
+font-size: 3rem;
+letter-spacing: 0.5rem;
 }
-.titulo-p {
-  font-size: 1rem;
-}
+
 
 .navbar {
     width: 100%;
@@ -78,7 +77,7 @@ font-size: 2rem;
 .menu li {
    margin: auto;
    padding: 5px 5px;
-   font-size: 15px;
+   font-size: 1rem;
    background-color:rgba(26, 26, 26, 0.729);
    border-radius: 5px; 
    cursor: pointer; 
@@ -86,13 +85,13 @@ font-size: 2rem;
   }
 
 .menu a {
-  font-size: 12px;
-  letter-spacing: 2px;
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
   text-transform: uppercase;
   display: inline-block;
   text-align: center;
   font-weight: bold;
-  padding: 0.7em 2em;
+  padding: 0.5rem 1rem;
   border: 1px solid gold;
   border-radius: 5px;
   position: relative;
@@ -160,8 +159,7 @@ font-size: 2rem;
                 0 0 100px goldenrod;
   }
   .form-container {
-    margin-top: 20px;
-    display: none; /* Ocultar por defecto */
+    display: none; 
     background-color: black;
     padding: 20px;
     color: gold;
@@ -209,6 +207,7 @@ font-size: 2rem;
     height: auto;
     border-radius: 8px; 
     object-fit: cover; 
+    margin: 0 0;
    }
    
   
@@ -258,65 +257,85 @@ footer {
 
 /* fin de Footer*/
 /* Media query para dispositivos con un ancho de pantalla máximo de 768px */
-@media (max-width: 768px) {
+@media (max-width: 668px) {
 
+  .header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(23, 23, 23);
+    color: goldenrod;
+    padding: 10px;
+}
 
   .logo, .imagen {
-      margin: 10px; /* Reduce los márgenes */
-      width: 80px; /* Ajusta el tamaño de las imágenes */
+      margin: 10px; 
+      width: 80px; 
       height: 80px;
   }
 
   .titulo {
-      font-size: 1.5rem; /* Reduce el tamaño del título */
+      font-size: 1.6rem; 
   }
 
   .menu {
-      flex-direction: column; /* Cambia los elementos del menú a una columna */
+      flex-direction: column; 
       align-items: center;
   }
 
   .menu li {
-      margin: 5px 0; /* Reduce los márgenes entre los elementos */
-      width: 100%; /* Asegura que el elemento ocupe todo el ancho */
-      text-align: center; /* Centra los textos */
+      margin: 3px 0; 
+      width: 100%; 
+      text-align: center; 
   }
 
   .menu a {
-      font-size: 1rem; /* Ajusta el tamaño de los enlaces */
+      font-size: 0.7rem; 
   }
 
   .shadow__btn {
-      width: 90%; /* Botones ocupan casi todo el ancho */
-      font-size: 0.8rem; /* Ajusta el tamaño del texto */
+      width: 90%; 
+      font-size: 0.8rem; 
   }
 
   .form-container {
-      width: 90%; /* El formulario ocupa casi todo el ancho */
+      width: 90%; 
   }
 
   main {
-      flex-direction: column; /* Asegura que el contenido principal esté en una columna */
+      flex-direction: column; 
       align-items: center;
   }
 
   .image-grid {
-      grid-template-columns: repeat(3, 1fr); /* Mantén el grid de 3 columnas */
-      gap: 10px; /* Ajusta el espacio entre las imágenes */
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 5px; 
+      margin: 50px;
+      margin-top: 0%;
+
   }
+  .image-grid img {
+    width: 90%; 
+    height: auto;
+    border-radius: 5px; 
+    object-fit: cover; 
+    margin: 0 0;
+   }
 
   .footer-content {
-      flex-direction: column; /* Apila los elementos del footer */
-      align-items: center; /* Centra los contenidos */
+      flex-direction: column; 
+      align-items: center; 
       text-align: center;
   }
 
   .footer-logo img {
-      width: 80px; /* Ajusta el tamaño del logo */
+      width: 50px; 
   }
 
   .footer-contacto, .footer-social, .footer-legal {
-      margin: 10px 0; /* Espaciado entre secciones */
+      margin: 10px 0; 
   }
 
   .footer-contacto ul, .footer-social ul, .footer-legal ul {
@@ -324,6 +343,6 @@ footer {
   }
 
   .footer-contacto li, .footer-social li, .footer-legal li {
-      margin: 5px 0; /* Ajusta márgenes internos */
+      margin: 5px 0;
   }
 }
