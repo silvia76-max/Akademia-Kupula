@@ -1,3 +1,5 @@
+ 
+ 
  // JavaScript para manejar el despliegue del formulario
  const toggleButton = document.getElementById('toggleButton');
  const formContainer = document.getElementById('formContainer');
