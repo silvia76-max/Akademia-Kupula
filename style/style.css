@@ -1,64 +1,50 @@
-/* Estilos Generales*/
-
-
- /* CSS HEX */
+/* Estilos Generales */
 :root {
   --goldenrod: goldenrod;
   --black: black;
   --blacklight: rgb(23, 23, 23);
-  --meentlight:rgb(96, 159, 96);
-   }
+  --meentlight: rgb(96, 159, 96);
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
- .montserrat-uniquifier> {
-      font-family: "Montserrat", sans-serif;
-      font-optical-sizing: auto;
-      font-weight:"";
-      font-style: normal;
-    }
-
-  /* ---- Barra de navegacion ---- */
-  .header {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(23, 23, 23);
-    color: goldenrod;
-    padding: 10px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-    width: 150px; 
-    height: 150px;
-    border-radius: 20px;
-    margin: 50px;
-   box-sizing: border-box;
-   box-shadow: -3px 3px 3px;
-   color: goldenrod;
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--blacklight);
+  color: var(--goldenrod);
 }
+
+/* ---- Barra de navegación ---- */
+.header {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--blacklight);
+  color: var(--goldenrod);
+  padding: 10px;
+}
+
+.logo,
 .imagen {
-   width: 150px; 
-   height: 150px;
-   border-radius: 20px;
-   margin: 50px;
-   box-sizing: border-box;
-   box-shadow: 4px 4px;
-   color: goldenrod;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  margin: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .titulo {
-font-size: 3rem;
-letter-spacing: 0.5rem;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
 }
 
-
-/* Ocultar menú por defecto */
+/* Menú hamburguesa */
 .menu {
   display: none;
   flex-direction: column;
@@ -67,7 +53,7 @@ letter-spacing: 0.5rem;
   margin: 0;
   background-color: #333;
   position: absolute;
-  top: 60px; /* Ajusta según el diseño */
+  top: 60px;
   right: 10px;
   width: 200px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -93,229 +79,172 @@ letter-spacing: 0.5rem;
   background-color: #555;
 }
 
-/* Botón de hamburguesa */
 .hamburger {
   background: none;
   border: none;
-  font-size: 24px;
+  font-size: 40px;
   cursor: pointer;
-  color: goldenrod;
+  color: var(--goldenrod);
 }
 
-/* Mostrar el menú cuando está activo */
 .menu.active {
   display: flex;
 }
-  /* ---- Fin barra navegacion---- */
-  .shadow__btn {
-    padding: 8px 16px;
-    font-size: 0.6rem;
-    color: black;
-    border: 1.5px solid goldenrod;
-    letter-spacing: 3px;
-    font-weight: 700;
-    text-transform: uppercase;
-    transition: 0.5s;
-    cursor: pointer;
-    transition-property: box-shadow;
-  }
-  
-  .shadow__btn {
-    background:black;
-    color: goldenrod;
-    box-shadow: 0 0 25px goldenrod;
-   }
-  .shadow__btn:hover {
-    color: gold;
-    box-shadow: 0 0 5px goldenrod,
-                0 0 25px goldenrod,
-                0 0 50px goldenrod,
-                0 0 100px goldenrod;
-  }
-  .form-container {
-    display: none; 
-    background-color: black;
-    padding: 20px;
-    color: gold;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  input[type="text"], input[type="email"], input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid gold;
-    border-radius: 5px;
-  }
-  input[type="submit"] {
-    padding: 10px 20px;
-    background-color: goldenrod;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  input[type="submit"]:hover {
-    background-color: gold;
-  }
-  
-  main {
-   background-color:rgb(23, 23, 23);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    margin-bottom: 10px;
- }
+
+/* Botón */
+.shadow__btn {
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  color: white;
+  border: 1.5px solid var(--goldenrod);
+  text-transform: uppercase;
+  background: var(--black);
+  box-shadow: 0 0 25px var(--goldenrod);
+  cursor: pointer;
+  transition: box-shadow 0.3s, color 0.3s;
+  margin-top: 20px;
+}
+
+.shadow__btn:hover {
+  color: gold;
+  box-shadow: 0 0 5px var(--goldenrod), 0 0 25px var(--goldenrod), 0 0 50px var(--goldenrod);
+}
+
+/* Formulario */
+#formContainer {
+  display: none; /* Oculto inicialmente */
+}
+.form-container {
+  display: none; /* Oculto por defecto */
+  background-color: #000;
+  padding: 20px;
+  color: gold;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: goldenrod;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: gold;
+}
+
+
+/* ---- Grid Central ---- */
+main {
+  background-color: var(--blacklight);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 10px;
+}
+
 .image-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 15px; 
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Mantener el grid de 3 columnas */
+  gap: 15px; /* Espaciado entre imágenes */
+}
 
 .image-grid img {
-    width: 100%; 
-    height: auto;
-    border-radius: 8px; 
-    object-fit: cover; 
-    margin: 0 0;
-   }
-   
-  
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
 
-  /*Footer*/
-
+/* Footer */
 footer {
-  background-color:rgb(23, 23, 23);
-  color:goldenrod;
-  ;
+  background-color: var(--blacklight);
+  color: var(--goldenrod);
+  text-align: center;
+  padding: 2rem;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-evenly;
-  padding: 2rem;
 }
-.footer-logo img{
-    border-radius: 10px;
-    width: 6rem;    
+
+.footer-logo img {
+  border-radius: 10px;
+  width: 6rem;
 }
-.footer-contacto h5 {
+
+.footer-contacto h5,
+.footer-social h5,
+.footer-legal h5 {
   margin-bottom: 1rem;
   font-size: 1.2rem;
+ 
 }
- .footer-contacto li{
- list-style: none;
- }
- .footer-social h5 {
- font-size: 1.2rem;
- }
-
- .redessociales ul, li {
-  list-style: none;
-  color: goldenrod;
- }
-
-.footer-legal h5{
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-}
-.footer-legal li,a {
+.footer-legal ul, li, a,
+.footer-social ul, li, a {
   color: goldenrod;
   text-decoration: none;
 }
 
 
-/* fin de Footer*/
-/* Media query para dispositivos con un ancho de pantalla máximo de 768px */
+/* Media Queries */
 @media (max-width: 768px) {
-
   .header {
-    width: 100%;
     height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(23, 23, 23);
-    color: goldenrod;
-    padding: 10px;
-}
+    flex-direction: column;
+    justify-content: center;
+  }
 
-  .logo, .imagen {
-      margin: 10px; 
-      width: 80px; 
-      height: 80px;
+  .logo,
+  .imagen {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
   }
 
   .titulo {
-      font-size: 1.6rem; 
+    font-size: 1.6rem;
   }
 
   .menu {
-      flex-direction: column; 
-      align-items: center;
-  }
-
-  .menu li {
-      margin: 3px 0; 
-      width: 100%; 
-      text-align: center; 
-  }
-
-  .menu a {
-      font-size: 0.7rem; 
-  }
-
-  .shadow__btn {
-      width: 90%; 
-      font-size: 0.8rem; 
+    position: static;
+    width: 100%;
   }
 
   .form-container {
-      width: 90%; 
+    width: 90%;
   }
 
   main {
-      flex-direction: column; 
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .image-grid {
-      grid-template-columns: repeat(3, 1fr); 
-      gap: 0.5rem; 
-    
-
+    grid-template-columns: 1fr; /* Cambia a 1 columna en pantallas pequeñas */
+    gap: 10px;
   }
-  .image-grid img {
-    width: 90%; 
-    height: auto;
-    border-radius: 5px; 
-    object-fit: cover; 
-    margin: 0 0;
-   }
 
   .footer-content {
-      flex-direction: column; 
-      align-items: center; 
-      text-align: center;
-  }
-
-  .footer-logo img {
-      width: 50px; 
-  }
-
-  .footer-contacto, .footer-social, .footer-legal {
-      margin: 10px 0; 
-  }
-
-  .footer-contacto ul, .footer-social ul, .footer-legal ul {
-      padding: 0;
-  }
-
-  .footer-contacto li, .footer-social li, .footer-legal li {
-      margin: 5px 0;
+    flex-direction: column;
+    text-align: center;
   }
 }

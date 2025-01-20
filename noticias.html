@@ -17,25 +17,25 @@
       <link rel="icon" type="img/favicon.ico"  href="img/favicon.ico" />
 </head>
 <body>
-     <!--Barra navegador----------------------------------->
-
-  
-    <header class="header">
-      <img src="img/vinilo logo.svg" alt="Logo" class="logo">
-        
-          <h2 class="titulo">Akademia la Kupula</h2></div>
-          <img src="img/tania7.jpg" alt="Imagen de encabezado" class="imagen">
-  
-    </header>
+      <!-- Barra de navegación -->
+      <header class="header">
+        <img src="img/vinilo logo.svg" alt="Logo" class="logo">
+        <div class="titulo_container">
+            <h2 class="titulo"><strong>Akademia</strong> la Kupula</h2>
+        </div>
+        <img src="img/tania7.jpg" alt="Imagen de encabezado" class="imagen">
+    <!-- Menú hamburguesa -->
     <nav class="navbar">
-           <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="akademia.html">Akademia</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-     </nav>
+      <button class="hamburger" id="hamburgerButton">☰</button> <!-- Cambié el id -->
+      <ul class="menu" id="menu"> <!-- Cambié el id -->
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="akademia.html">Akademia</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    </header>
    <!--fin Barra navegador----------------------------------->
    
 
@@ -75,44 +75,29 @@
     </article>
 </main>
 
-<!---- footer  section-->  
+<!-- Footer -->
 <footer>
-   
   <div class="footer-content">
-
-        <div class="footer-logo">
-          <href "#"><img src="img/img-logo.svg" alt="" width="130px"></href>
-        </div>
-
-       <div class="footer-contacto">
+      <div class="footer-logo">
+          <a href="#"><img src="img/img-logo.svg" alt="Logo" width="130px"></a>
+      </div>
+      <div class="footer-contacto">
           <h5>Contacto</h5>
-            <ul>
-               <li>Tfno:+34 620 57 66 46</li>
-             <li>C/ Iturriaga n 58</li>
-              <li>santutxu, Bilbao</li>
-            </ul>
-        </div>
-
-        <div class="footer-social">
-          <h5>Redes sociales</h5>
-          <br/>
-          <ul class="redessociales">
-            <li>
-              <a href="https://www.facebook.com/Elsalondelacupula/" rel="noopener noreferrer" target="_blank">Facebook</a>
-              <i class="fa-brands fa-facebook"></i>
-              </a>
-     
-            </li>
-            <li>
-              <a href="https://www.instagram.com/lakupulaakademia/" rel="noopener noreferrer" target="_blank">Instagram</a>
-              <i class="fa-brands fa-instagram"></i>
-              </a>
-             
-            </li>
-            <li><a href="#"><src = "mailto:institutodebellezataniacalvo@gmail.com">institutodebellezataniacalvo<br>@gmail.com</a></li>
+          <ul>
+              <li>Tfno: +34 620 57 66 46</li>
+              <li>C/ Iturriaga n 58</li>
+              <li>Santutxu, Bilbao</li>
           </ul>
-        </div>
-        <div class="footer-legal">
+      </div>
+      <div class="footer-social">
+          <h5>Redes sociales</h5>
+          <ul class="redessociales">
+              <li><a href="https://www.facebook.com/Elsalondelacupula/" target="_blank">Facebook</a></li>
+              <li><a href="https://www.instagram.com/lakupulaakademia/" target="_blank">Instagram</a></li>
+              <li><a href="mailto:institutodebellezataniacalvo@gmail.com">Email</a></li>
+          </ul>
+      </div>
+      <div class="footer-legal">
           <h5>Textos legales</h5>
           <ul>
               <li><a href="rgpd.html">Política de privacidad</a></li>
@@ -120,7 +105,9 @@
               <li><a href="cookies.html">Política de cookies</a></li>
           </ul>
       </div>
-  </footer>
+  </div>
+</footer>
+
 <!--FIN footer  section------->
 
 

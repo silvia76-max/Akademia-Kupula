@@ -5,123 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kupula Akademia</title>
     <link rel="stylesheet" href="style/style.css">
-    <link
-    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Sixtyfour+Convergence&display=swap"
-    rel="stylesheet" />
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-      <link rel="icon" type="img/favicon.ico"  href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body>
-     <!--Barra navegador----------------------------------->
-
-  
-     <header class="header">
-      <img src="img/vinilo logo.svg" alt="Logo" class="logo">
-         <div class="titulo_container">
-         
-          <h2 class="titulo"><strong>Akademia</strong> la Kupula</h2></div>
-          <img src="img/tania7.jpg" alt="Imagen de encabezado" class="imagen">
-  
-       <nav class="navbar">
-        <button class="hamburger" id="hamburger">
-            ☰
-        </button>
-        <ul class="menu" id="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="akademia.html">Akademia</a></li>
-            <li><a href="cursos.html">Cursos</a></li>
-            <li><a href="noticias.html">Noticias</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+    <!-- Barra de navegación -->
+    <header class="header">
+        <img src="img/vinilo logo.svg" alt="Logo" class="logo">
+        <div class="titulo_container">
+            <h2 class="titulo"><strong>Akademia</strong> la Kupula</h2>
+        </div>
+        <img src="img/tania7.jpg" alt="Imagen de encabezado" class="imagen">
+    <!-- Menú hamburguesa -->
+    <nav class="navbar">
+      <button class="hamburger" id="hamburgerButton">☰</button> <!-- Cambié el id -->
+      <ul class="menu" id="menu"> <!-- Cambié el id -->
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="akademia.html">Akademia</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+      </ul>
     </nav>
-  </header> 
-    <!--fin Barra navegador----------------------------------->
-   
-  <!--grid imagenes-->
+    </header>
+
+    <!-- Galería de imágenes -->
     <main>
-         <div class="image-grid">
-          <img src="img/uñas-kupula12.jpg" alt="Imagen 1">
-          <img src="img/uñas-kupula15.jpg" alt="Imagen 2">
-          <img src="img/uñas-kupula29.jpg" alt="Imagen 3">
-          <img src="img/tania8.jpg" alt="Imagen 4">
-          <img src="img/uñas-kupula27.jpg" alt="Imagen 5">
-          <img src="img/uñas-kupula5.jpg" alt="Imagen 6">
-          <img src="img/uñas-kupula39.jpg" alt="Imagen 7">
-          <img src="img/uñas-kupula3.jpg" alt="Imagen 8">
-          <img src="img/uñas-kupula26.jpg" alt="Imagen 9">
+        <div class="image-grid">
+            <img src="img/uñas-kupula12.jpg" alt="Imagen 1">
+            <img src="img/uñas-kupula15.jpg" alt="Imagen 2">
+            <img src="img/uñas-kupula29.jpg" alt="Imagen 3">
+            <img src="img/tania8.jpg" alt="Imagen 4">
+            <img src="img/uñas-kupula27.jpg" alt="Imagen 5">
+            <img src="img/uñas-kupula5.jpg" alt="Imagen 6">
+            <img src="img/uñas-kupula39.jpg" alt="Imagen 7">
+            <img src="img/uñas-kupula3.jpg" alt="Imagen 8">
+            <img src="img/uñas-kupula26.jpg" alt="Imagen 9">
+        </div>
+
+      <!-- Botón y formulario -->
+    <div class="container">
+      <button id="toggleButton" class="shadow__btn">Registrate</button>
+      <div id="formContainer" class="form-container" style="display: none;">
+          <h2>Formulario de Registro</h2>
+          <form>
+              <input type="text" placeholder="Nombre completo" required />
+              <input type="email" placeholder="Correo electrónico" required />
+              <input type="password" placeholder="Contraseña" required />
+              <input type="submit" value="Registrar" />
+          </form>
       </div>
-      <nav class="navbar">
-        <div class="container">
-        <button class="shadow__btn" id="toggleButton">Registrate</button>
-        <div class="form-container" id="formContainer">
-            <h2>Formulario de Registro</h2>
-            <form action="#" method="POST">
-                <input type="text" name="nombre" placeholder="Nombre completo" required>
-                <input type="email" name="correo" placeholder="Correo electrónico" required>
-                <input type="password" name="password" placeholder="Contraseña" required>
-                <input type="submit" value="Registrar">
-            </form>
+    </div>
+  </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="#"><img src="img/img-logo.svg" alt="Logo" width="130px"></a>
+            </div>
+            <div class="footer-contacto">
+                <h5>Contacto</h5>
+                <ul>
+                    <li>Tfno: +34 620 57 66 46</li>
+                    <li>C/ Iturriaga n 58</li>
+                    <li>Santutxu, Bilbao</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h5>Redes sociales</h5>
+                <ul class="redessociales">
+                    <li><a href="https://www.facebook.com/Elsalondelacupula/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/lakupulaakademia/" target="_blank">Instagram</a></li>
+                    <li><a href="mailto:institutodebellezataniacalvo@gmail.com">Email</a></li>
+                </ul>
+            </div>
+            <div class="footer-legal">
+                <h5>Textos legales</h5>
+                <ul>
+                    <li><a href="rgpd.html">Política de privacidad</a></li>
+                    <li><a href="aviso-legal.html">Aviso legal y condiciones de uso</a></li>
+                    <li><a href="cookies.html">Política de cookies</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </main>
-    
-    
- <!--fin pag de inicio-->
+    </footer>
 
-
-<!---- footer  section-->  
-<footer>
-   
-  <div class="footer-content">
-
-        <div class="footer-logo">
-          <href "#"><img src="img/img-logo.svg" alt="" width="130px"></href>
-        </div>
-
-       <div class="footer-contacto">
-          <h5>Contacto</h5>
-            <ul>
-               <li>Tfno:+34 620 57 66 46</li>
-             <li>C/ Iturriaga n 58</li>
-              <li>santutxu, Bilbao</li>
-            </ul>
-        </div>
-
-        <div class="footer-social">
-          <h5>Redes sociales</h5>
-          <br/>
-          <ul class="redessociales">
-            <li>
-              <a href="https://www.facebook.com/Elsalondelacupula/" rel="noopener noreferrer" target="_blank">Facebook</a>
-              <i class="fa-brands fa-facebook"></i>
-              </a>
-     
-            </li>
-            <li>
-              <a href="https://www.instagram.com/lakupulaakademia/" rel="noopener noreferrer" target="_blank">Instagram</a>
-              <i class="fa-brands fa-instagram"></i>
-              </a>
-             
-            </li>
-            <li><a href="#"><src = "mailto:institutodebellezataniacalvo@gmail.com">institutodebellezataniacalvo<br>@gmail.com</a></li>
-          </ul>
-        </div>
-        <div class="footer-legal">
-          <h5>Textos legales</h5>
-          <ul>
-              <li><a href="rgpd.html">Política de privacidad</a></li>
-              <li><a href="aviso-legal.html">Aviso legal y condiciones de uso</a></li>
-              <li><a href="cookies.html">Política de cookies</a></li>
-          </ul>
-      </div>
-  </footer>
-<!--FIN footer  section------->
-
-    <script src="..app/script.js"></script>
-
-
+    <script src="../app/script.js"></script>
 </body>
 </html>
 
