@@ -58,80 +58,54 @@ letter-spacing: 0.5rem;
 }
 
 
-.navbar {
-    width: 100%;
-    display:flex;
-    justify-content: space-evenly;
-    padding:5px;
-    background-color:rgb(23, 23, 23);
-    margin: 5px;
-    }
+/* Ocultar menú por defecto */
 .menu {
-   list-style-type:none;
-   display: flex;
-   cursor: pointer;
-   transition: color 0.3s;
-   background-color: black;
-  }
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+  position: absolute;
+  top: 60px; /* Ajusta según el diseño */
+  right: 10px;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
 
 .menu li {
-   margin: auto;
-   padding: 5px 5px;
-   font-size: 1rem;
-   background-color:rgba(26, 26, 26, 0.729);
-   border-radius: 5px; 
-   cursor: pointer; 
-   transition: 0.3s ease;
-  }
+  border-bottom: 1px solid #444;
+}
 
-.menu a {
-  font-size: 1rem;
-  letter-spacing: 0.5rem;
-  text-transform: uppercase;
-  display: inline-block;
-  text-align: center;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  border: 1px solid gold;
-  border-radius: 5px;
-  position: relative;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16);
-  color:goldenrod;
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.menu li a {
+  display: block;
+  color: white;
   text-decoration: none;
-  transition: 0.3s ease all;
-  z-index: 1;} 
+  padding: 10px 20px;
+}
 
-.menu a:hover {
- color:gold;
- }
-  .menu a :before {
-    transition: 0.5s all ease;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    opacity: 0;
-    content: '';
-    background-color: goldenrod;
-    z-index: -1;
-  }
-  
- .menu a :hover, button:focus {
-    color: gold;
-  }
-  
- .menu a :hover:before, menu a:focus:before {
-    transition: 0.5s all ease;
-    left: 0;
-    right: 0;
-    opacity: 1;
-  }
-  
- .menu a active {
-    transform: scale(0.9);
-  }
-  
+.menu li a:hover {
+  background-color: #555;
+}
+
+/* Botón de hamburguesa */
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Mostrar el menú cuando está activo */
+.menu.active {
+  display: flex;
+}
   /* ---- Fin barra navegacion---- */
   .shadow__btn {
     padding: 8px 16px;
