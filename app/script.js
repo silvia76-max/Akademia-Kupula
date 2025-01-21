@@ -1,10 +1,11 @@
 // JavaScript para manejar el menú hamburguesa
-const hamburgerButton = document.getElementById('hamburgerButton'); // Botón del menú
-const menu = document.getElementById('menu'); // Contenedor del menú
+const hamburgerButton = document.getElementById('hamburgerButton');
+const menu = document.getElementById('menu');
 
 hamburgerButton.addEventListener('click', () => {
-    menu.classList.toggle('active'); // Mostrar u ocultar el menú
+  menu.classList.toggle('active'); // Alternamos la clase activa
 });
+
 
 // JavaScript para manejar el despliegue del formulario
 
