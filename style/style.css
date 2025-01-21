@@ -17,7 +17,6 @@
  
 }
 
-/* ---- Barra de navegación ---- */
 
 body {
   margin: 0;
@@ -28,53 +27,48 @@ body {
 
 /* Header */
 .header {
+
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  align-items: center; 
-  width: 100%;
-  padding: 10px;
-  background-color: var(--secundario); 
+    grid-template-columns: auto 1fr auto; 
+    align-items: center; 
+    padding: 10px;
+    gap: 10px; 
+    background-color: var(--secundario);
 }
 
 
 .imagen {
-  align-self: flex-start; 
+ margin: 50px 50px;
   width: 200px; 
   height: 200px;
   border-radius: 5px;
-  margin: 50px 50px;
 }
 .titulo {
-  display: flex;
-  align-items: center;
   font-size: 3rem;
   letter-spacing: 0.2rem;
   text-align: center;
- 
-}
+ }
 
 .titulo-logo {
   width: 50px; 
   height: 50px;
 }
 
-
-.navbar {
-  width: 100%; 
-
+ .icono1,.icono2 {
+  width: 75px;
+  height: 75px;
+  cursor: pointer; 
 }
 
 .menu {
   display: flex; 
   justify-content: center; 
   list-style: none;
-  padding: 0;
-  margin: 0;
   background-color: var(--secundario);
 }
 
 .menu li {
-  margin: 0 30px; 
+  margin: 0 10px; 
  
 }
 
@@ -95,38 +89,50 @@ body {
 /* Diseño móvil y tablet: movemos el botón hamburguesa */
 @media (max-width: 1024px) {
   .header {
+    height: 150px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-  
-  }
-  .imagen {
-    width: 100px; 
-    height: 100px;
-    border-radius: 5px;
-    margin-bottom: 50px;
-   
-   }
-  .titulo {
-  
-    font-size: 2rem;
-    letter-spacing: 0.1rem;
+    grid-template-rows: auto 1fr auto;
+    align-items: center; 
+    gap: 10px; 
+    background-color:var(--secundario);
+}
 
-    }
-  
-  .titulo-logo {
-    width: 50px; 
+/* Imagen a la izquierda */
+.header .imagen {
+    width: 125px;
+    height: 125px;
+    border-radius: 5px;
+}
+
+/* Título en el centro */
+.header .titulo {
+   margin-left: 20px;
+    font-size: 2.5rem;
+   
+}
+
+.header .titulo-logo {
+    width: 50px;
     height: 50px;
-  }
-  
+}
+
+ .icono1,.icono2 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer; 
+}
+
+.navbar{
+  background-color:var(--secundario) ;
+}
 .hamburger {
-    display: block; 
-    font-size: 40px;
+  display: block;
+    font-size: 50px;
     cursor: pointer;
     border: none;
     background: none;
     color: var(--primario);
-    margin-left: 100px;
-   
+    margin-left: 150px;
    }
    .menu {
     display: none; 
@@ -139,7 +145,6 @@ body {
 
   .menu.active {
     display: flex; 
-    background-color: var(--secundario);
     }
 
   .menu li {
