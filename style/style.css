@@ -27,7 +27,6 @@ body {
 
 /* Header */
 .header {
-
   display: grid;
     grid-template-columns: auto 1fr auto; 
     align-items: center; 
@@ -50,16 +49,19 @@ body {
  }
 
 .titulo-logo {
-  width: 50px; 
-  height: 50px;
+  width: 60px; 
+  height: 60px;
 }
 
- .icono1,.icono2 {
+ .icono2,.icono3 {
   width: 75px;
   height: 75px;
   cursor: pointer; 
 }
-
+.icono1{
+  width: 40px;
+  cursor: pointer;
+}
 .menu {
   display: flex; 
   justify-content: center; 
@@ -115,8 +117,10 @@ body {
     width: 50px;
     height: 50px;
 }
-
- .icono1,.icono2 {
+.icono1{
+  width: 35px;
+}
+.icono2,.icono3 {
     width: 50px;
     height: 50px;
     cursor: pointer; 
