@@ -174,28 +174,7 @@ margin:20px 10px;
     border-radius: 20px;
   }
 
-  .footer-content {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  .footer-logo img {
-    border-radius: 10px;
-    width: 6rem;
-  }
-  
-  .footer-contacto h5,
-  .footer-social h5,
-  .footer-legal h5 {
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-   
-  }
-  .footer-legal ul, li, a,
-  .footer-social ul, li, a {
-    color: goldenrod;
-    text-decoration: none;
-  }
+ 
 
 /* Media Query: Tablets */
 @media (max-width: 1024px) {

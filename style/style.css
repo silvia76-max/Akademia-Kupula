@@ -106,7 +106,7 @@ body {
 
 /* Título en el centro */
 .header .titulo {
-   margin-left: 20px;
+ 
     font-size: 2.5rem;
    
 }
@@ -126,13 +126,13 @@ body {
   background-color:var(--secundario) ;
 }
 .hamburger {
-  display: block;
-    font-size: 50px;
+   display: block;
+    font-size: 80px;
     cursor: pointer;
     border: none;
     background: none;
     color: var(--primario);
-    margin-left: 150px;
+
    }
    .menu {
     display: none; 
