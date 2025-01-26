@@ -100,15 +100,16 @@ body {
 
 /* Imagen a la izquierda */
 .header .imagen {
-    width: 125px;
-    height: 125px;
+    width: 175px;
+    height: 175px;
     border-radius: 5px;
+    margin-left: 50px;
 }
 
 /* Título en el centro */
 .header .titulo {
  
-    font-size: 2.5rem;
+    font-size: 2rem;
    
 }
 
@@ -116,13 +117,12 @@ body {
     width: 50px;
     height: 50px;
 }
-.icono1{
-  width: 35px;
-}
-.icono2,.icono3 {
-    width: 50px;
-    height: 50px;
-    cursor: pointer; 
+.iconos{
+  color: gold;
+  font-size: 24px;
+  margin-right: 2rem;
+  gap: 20px;
+  cursor: pointer;
 }
 
 .navbar{
@@ -130,7 +130,7 @@ body {
 }
 .hamburger {
    display: block;
-    font-size: 80px;
+    font-size: 60px;
     cursor: pointer;
     border: none;
     background: none;
@@ -224,6 +224,7 @@ input[type="submit"]:hover {
 
 /* ---- Grid Central ---- */
 main {
+  border-top: 2px solid gold;
   background-color: var(--secundario);
   display: flex;
   flex-direction: column;
@@ -256,6 +257,7 @@ main {
 }
 
 .footer-content {
+  border-top: 2px solid gold;
   display: flex;
   justify-content: space-evenly;
   background-color: var(--secundario);
@@ -296,7 +298,7 @@ main {
   }
 
   .titulo {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .menu {
