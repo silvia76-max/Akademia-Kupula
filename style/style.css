@@ -38,28 +38,27 @@ body {
 
 .imagen {
  margin: 50px 50px;
-  width: 200px; 
-  height: 200px;
+  width: 250px; 
+  height: 250px;
   border-radius: 5px;
+  box-shadow: 15px 15px 20px rgba(212, 175, 55, 0.8); 
 }
 .titulo {
   font-size: 3rem;
   letter-spacing: 0.2rem;
   text-align: center;
+
  }
 
 .titulo-logo {
   width: 60px; 
   height: 60px;
 }
-
- .icono2,.icono3 {
-  width: 75px;
-  height: 75px;
-  cursor: pointer; 
-}
-.icono1{
-  width: 40px;
+.iconos{
+  color: gold;
+  font-size: 36px;
+  margin-right: 2rem;
+  gap: 40px;
   cursor: pointer;
 }
 .menu {
