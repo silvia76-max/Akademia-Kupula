@@ -1,10 +1,15 @@
 
-
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  height: 100vh; 
+}
 .titulo-cursos {
   font-size: 1.5rem;
   font-style: bold;
   color: goldenrod;
-  margin-top: 20px;
+
 }
 
 .cards-container-alumnos {
@@ -15,6 +20,7 @@
   margin: 5rem 0;
   width: 100%;
   overflow: hidden;
+  gap:10px;
 }
 
 .card-alumnos {
@@ -22,7 +28,7 @@
   border-radius: 2rem;
   max-width: 30rem;
   min-width: 20rem;
-  width: 18%;
+  width: 15%;
   padding: 1rem;
   text-align: center;
   background-color: rgba(46, 46, 46, 0.445);
@@ -51,7 +57,7 @@
 }
 
 .card-alumnos p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: center;
   color: gold;
   margin-bottom: 10px;
@@ -75,3 +81,32 @@
   color: yellow;
 }
 
+
+/* -------- RESPONSIVE -------- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .cards-container-alumnos {
+      grid-template-columns: repeat(auto-fit, minmax(10px, 1fr)); /* Reduce el tamaño de las cards */
+  }
+
+  .card-alumnos {
+      padding: 12px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .cards-container-alumnos {
+      grid-template-columns: 1fr; /* 1 sola columna en móviles */
+  }
+
+  .card-alumnos {
+      max-width: 90%;
+      margin: auto;
+  }
+
+  .button {
+      width: 100%; /* Botón ocupa todo el ancho en móviles */
+  }
+}
