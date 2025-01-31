@@ -37,7 +37,7 @@ body {
 
 
 .imagen {
- margin: 50px 50px;
+  margin: 50px 50px;
   width: 250px; 
   height: 250px;
   border-radius: 5px;
@@ -65,7 +65,7 @@ body {
   display: flex; 
   justify-content: center; 
   list-style: none;
-  background-color: var(--secundario);
+  background-color: var(--primario);
 }
 
 .menu li {
@@ -77,6 +77,7 @@ body {
   font-size: 1.5rem;
   color:var(--primario);
   text-decoration: none;
+  color:rgb(17, 15, 15);
 }
 
 .menu li a:hover {
@@ -155,7 +156,7 @@ body {
   }
 
   .menu li a {
-    color: var(--primario); 
+    color: rgb(17, 15, 15); 
     text-decoration: none; 
     font-size: 1.5rem; 
     cursor:pointer;
