@@ -37,10 +37,10 @@ body {
 
 
 .imagen {
- margin: 50px 50px;
+  margin: 50px 50px;
   width: 250px; 
   height: 250px;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 15px 15px 20px rgba(212, 175, 55, 0.8); 
 }
 .titulo {
@@ -65,7 +65,11 @@ body {
   display: flex; 
   justify-content: center; 
   list-style: none;
+<<<<<<< HEAD
   background-color: var(--primarioClaro);
+=======
+  background-color: var(--primario);
+>>>>>>> 620f5942f256a5809af932039db39a8d6825e7fb
 }
 
 .menu li {
@@ -77,6 +81,7 @@ body {
   font-size: 1.5rem;
   color:var(--secundario);
   text-decoration: none;
+  color:rgb(17, 15, 15);
 }
 
 .menu li a:hover {
@@ -155,7 +160,11 @@ body {
   }
 
   .menu li a {
+<<<<<<< HEAD
     color: var(--secundario); 
+=======
+    color: rgb(17, 15, 15); 
+>>>>>>> 620f5942f256a5809af932039db39a8d6825e7fb
     text-decoration: none; 
     font-size: 1.5rem; 
     cursor:pointer;
