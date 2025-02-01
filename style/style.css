@@ -65,7 +65,7 @@ body {
   display: flex; 
   justify-content: center; 
   list-style: none;
-  background-color: var(--secundario);
+  background-color: var(--primarioClaro);
 }
 
 .menu li {
@@ -75,12 +75,12 @@ body {
 
 .menu li a {
   font-size: 1.5rem;
-  color:var(--primario);
+  color:var(--secundario);
   text-decoration: none;
 }
 
 .menu li a:hover {
-  color:var(--primarioClaro);
+  color:var(--black);
 }
 
 .hamburger{
@@ -155,14 +155,14 @@ body {
   }
 
   .menu li a {
-    color: var(--primario); 
+    color: var(--secundario); 
     text-decoration: none; 
     font-size: 1.5rem; 
     cursor:pointer;
    }
 
   .menu li a:hover {
-    color: var(--primarioClaro); 
+    color: var(--black); 
   }
 }
 /* Botón */
