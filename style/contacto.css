@@ -1,4 +1,3 @@
-
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -8,37 +7,32 @@
 .contacto {
     border-radius: 10px;
     gap: 20px;
-    margin-top:120px;
-    max-height: 580px;
+
 }
 
 .texto-interno {
     text-align: center;
    color: goldenrod;
-
-
+   justify-content: center;
 }
 
 .texto-interno h2 {
     font-size: 2rem;
-    margin:10px 10px;
     color: goldenrod;
-    margin:40px 60px;
+    margin-bottom: 5px;
 }
 
 .texto-interno p {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    line-height: 1.5;
     color:goldenrod;
-    margin-bottom: 50px;
-    width: 40%;
-    margin-left: 18rem;
-
+  margin-bottom: 50px;
+    width: 90%;
 }
 
 .imagen-entrada {
-    width: 300px;
-    height: 180px;
+    width: 400px;
+    height: 200px;
     border-radius: 8px;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -48,10 +42,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin:20px 10px;
-
 }
 
 .mapa iframe {
+  width: 400px;
+  height: 200px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -72,84 +67,79 @@ margin:20px 10px;
    transform: scale(1.2); 
     opacity: 0.8; 
 }
-.formulario h2{
+.formulario {
+  text-align: center;
+}
+
+.formulario h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
   color: goldenrod;
-  margin-top: 150px;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 .formulario p {
     color: goldenrod;
-    margin-top: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
-    width: 50%;
-   
-}
-.form {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    font-family: inherit;
-    gap: 10px;
-    padding-inline: 1em;
-    padding-bottom: 0.4em;
-    background-color: #171717;
-    border-radius: 20px;
-  }
-  
-  .form-heading {
+    width: 90%;
     text-align: center;
-    margin: 1.5rem;
-    color: goldenrod;
-    font-size: 1.5em;
-    background-color: transparent;
-    align-self: center;
-  }
-  
-  .form-field {
-    display: flex;
-    gap: 1.5em;
-    border-radius: 10px;
-    padding: 0.6em;
-    border: none;
-    outline: none;
-    color: goldenrod;
-    background-color: #171717;
-    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-  }
-  
-  .input-field {
-    background: none;
-    border: none;
-    outline: none;
-    width: 100%;
-    color: goldenrod;
-    padding-inline: 1em;
-  }
-  
-  .sendMessage-btn {
-    cursor: pointer;
-    margin-bottom: 3em;
-    padding: 1em;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    color: goldenrod;
-    font-weight: bold;
-    outline: 1px solid goldenrod;
-    transition: all ease-in-out 0.3s;
-  }
-  
-  .sendMessage-btn:hover {
-    transition: all ease-in-out 0.3s;
-    background-color:goldenrod;
-    color: #000;
-    cursor: pointer;
-    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-  }
+    margin-top: 5px;
+}
+
+/* Estilos del formulario */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido del formulario */
+  gap: 10px;
+  padding-inline: 1em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  border-radius: 20px;
+  width: 100%; /* Asegura que el formulario use todo el ancho disponible */
+}
+
+.form-field {
+  /* Se elimina el display:flex y gap para que el campo se ajuste correctamente */
+  width: 100%;
+  border-radius: 10px;
+  padding: 0.6em 1em;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  margin-bottom: 15px;
+}
+
+.input-field {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  color: goldenrod;
+  font-size: 1rem;
+}
+
+/* Botón de envío */
+.sendMessage-btn {
+  cursor: pointer;
+  margin-bottom: 3em;
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: goldenrod;
+  font-weight: bold;
+  outline: 1px solid goldenrod;
+  transition: all ease-in-out 0.3s;
+  width: 100%;
+}
+
+.sendMessage-btn:hover {
+  background-color: goldenrod;
+  color: #000;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
   
   .form-card1 {
     background-image: linear-gradient(163deg, goldenrod 0%, goldenrod 100%);
@@ -165,114 +155,9 @@ margin:20px 10px;
   .form-card2 {
     border-radius: 0;
     transition: all 0.2s;
-  
   }
   
   .form-card2:hover {
     transform: scale(0.95);
     border-radius: 20px;
   }
-
- 
-
-/* Media Query: Tablets */
-@media (max-width: 1024px) {
-  .texto-interno h2 {
-      font-size: 1.8rem;
-      margin: 10px;
-      text-align: left;
-  }
-
-  .texto-interno p {
-      font-size: 0.95rem;
-      line-height: 1.4; 
-      margin-left: 0rem; 
-      width: 70%;
-    
-  }
-
-  .formulario h2 {
-      font-size: 1.8rem; 
-  }
-
-  .formulario p {
-      font-size: 0.95rem; 
-      width: 80%; 
-  }
-
-  .form {
-      padding-inline: 0.8em;  
-      gap: 8px; 
-  }
-
-  .imagen-entrada {
-      width: 250px; 
-      height: 250px;
-  }
-
-  .social-icons a img {
-      width: 25px;
-      height: 25px;
-  }
-
-  .mapa iframe {
-    width: 200px;
-      height: 200px; 
-  }
-}
-
-/* Media Query: Móviles */
-@media (max-width: 768px) {
-  .contacto{
-    max-width: 200px;
-  }
-  .texto-interno h2 {
-      font-size: 1.5rem;
-      margin-bottom: 20px;
-    
-   }
-
-  .texto-interno p {
-   display: none;
-  }
-.formulario h2 {
-    font-size: 1.5rem; 
-    margin-bottom: 20px;
- }
-.formulario,
-.form-card1,
-.form-card2 {
-max-width: 250px;
-width: 200px;
-margin-left: 1px;
-margin-top: 5px;
-}
-
-
-  .formulario p {
-     display: none;
-  }
-
-  .form {
-      padding-inline: 0.5em;
-      gap: 5px;}
-
-  .imagen-entrada {
-      width: 200px; 
-      height: 200px;
-  
-    
-  }
-
-  .social-icons a img {
-      width: 20px; 
-      height: 20px;
-  }
-
-  .mapa iframe {
-    width: 200px;
-      height: 200px; 
-  
-    
-  }
-}
