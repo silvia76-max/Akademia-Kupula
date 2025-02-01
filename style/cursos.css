@@ -8,10 +8,12 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #1e1e1e;
-  color: white;
   overflow-x: hidden;
-}
 
+}
+.contenedor{
+  height: auto;
+}
 .titulo-cursos {
   font-size: 1.8rem;
   font-weight: bold;
@@ -28,6 +30,7 @@ body {
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+
 }
 
 .card-alumnos {
@@ -38,8 +41,8 @@ body {
   padding: 1rem;
   transition: transform 0.3s ease-in-out;
   flex: 1 1 calc(25% - 1rem); /* Cinco tarjetas en una fila en pantallas grandes */
-  max-width: 300px;
-  min-width: 200px;
+  max-width: 400px;
+  min-width: 300px;
 }
 
 .card-alumnos:hover {
@@ -62,7 +65,7 @@ body {
 .card-alumnos p {
   font-size: 1rem;
   text-align: center;
-  color: white;
+  color: gold;
   margin: 0.5rem 0;
 }
 

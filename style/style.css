@@ -65,11 +65,7 @@ body {
   display: flex; 
   justify-content: center; 
   list-style: none;
-<<<<<<< HEAD
   background-color: var(--primarioClaro);
-=======
-  background-color: var(--primario);
->>>>>>> 620f5942f256a5809af932039db39a8d6825e7fb
 }
 
 .menu li {
@@ -160,11 +156,7 @@ body {
   }
 
   .menu li a {
-<<<<<<< HEAD
     color: var(--secundario); 
-=======
-    color: rgb(17, 15, 15); 
->>>>>>> 620f5942f256a5809af932039db39a8d6825e7fb
     text-decoration: none; 
     font-size: 1.5rem; 
     cursor:pointer;
