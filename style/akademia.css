@@ -1,0 +1,161 @@
+
+ 
+.hero-carrusel {
+    position: relative;
+    height: 25vh;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 10px;
+    border-top: 2px solid gold;
+}
+/* Estilo del Main */
+.main-akademia {
+   
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%; 
+    height: auto;
+    margin: 0 auto; 
+    padding: 1rem; 
+    box-sizing: border-box;
+}
+
+/* Estilo general para las filas */
+.fila {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem; 
+    flex-wrap: wrap; 
+}
+
+/* Fila 1 */
+#fila-1 .imagen img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#fila-1 .texto {
+    color:gold;
+}
+
+/* Fila 2 */
+#fila-2 .imagen img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#fila-2 .texto {
+    color: gold;
+}
+
+/* Fila 3 */
+#fila-3 .imagen img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#fila-3 .texto {
+    color:gold;
+}
+
+/* Ajustes generales para texto */
+.texto h2 {
+    font-size: 2rem;
+    color: goldenrod;
+    margin-bottom: 1rem;
+}
+
+.texto p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+/* Responsivo */
+@media (max-width: 1300px) {
+    /* Para todas las filas, convertir en columna y la imagen siempre encima del texto */
+    #fila-1, #fila-3 {
+        flex-direction: column;
+        text-align: center; /* Centrar texto */
+    }
+
+    /* Para la fila 2, invertir el orden para que imagen quede arriba del texto */
+    #fila-2 {
+        flex-direction: column-reverse;
+        text-align: center; /* Centrar texto */
+    }
+
+    /* Estilo para la imagen en dispositivos pequeños y medios */
+    #fila-1 .imagen1 img,
+    #fila-2 .imagen2 img,
+    #fila-3 .imagen3 img {
+        max-width: 80%; /* Reducir tamaño de la imagen */
+        margin: 0 auto; /* Centrar imagen */
+    }
+
+    /* Ajuste de texto debajo de la imagen */
+    .texto {
+        text-align: center; /* Centrar texto */
+        font-size: 0.9rem; /* Ajustar tamaño de texto */
+        margin-top: 1rem; /* Añadir espacio entre imagen y texto */
+    }
+
+    /* Ajustar tamaño del título en pantallas pequeñas y medianas */
+    .texto h2 {
+        font-size: 1.5rem; /* Reducir tamaño del título */
+    }
+
+    /* Ajustar tamaño del párrafo */
+    .texto p {
+        font-size: 0.9rem; /* Reducir tamaño del texto */
+    }
+}
+/* Responsivo */
+@media (max-width: 768px) {
+    /* Para todas las filas, convertir en columna y la imagen siempre encima del texto */
+    #fila-1, #fila-3 {
+        flex-direction: column;
+        text-align: center; /* Centrar texto */
+        margin-top: 50px;
+    }
+
+    /* Para la fila 2, invertir el orden para que imagen quede arriba del texto */
+    #fila-2 {
+        flex-direction: column-reverse;
+        text-align: center; /* Centrar texto */
+    }
+
+    /* Estilo para la imagen en dispositivos pequeños */
+    #fila-1 .imagen1 img,
+    #fila-2 .imagen2 img,
+    #fila-3 .imagen3 img {
+        max-width: 80%; /* Reducir tamaño de la imagen */;
+
+    }
+
+    /* Ajuste de texto debajo de la imagen */
+    .texto {
+        text-align: center; /* Centrar texto */
+        font-size: 0.9rem; /* Ajustar tamaño de texto */
+ 
+    }
+
+    /* Ajustar tamaño del título en pantallas pequeñas */
+    .texto h2 {
+        font-size: 1.5rem; /* Reducir tamaño del título */
+    }
+
+    /* Ajustar tamaño del párrafo */
+    .texto p {
+        font-size: 0.9rem; /* Reducir tamaño del texto */
+    }
+}

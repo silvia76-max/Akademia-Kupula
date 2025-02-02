@@ -1,0 +1,163 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; 
+  margin: 20px;
+}
+.contacto {
+    border-radius: 10px;
+    gap: 20px;
+
+}
+
+.texto-interno {
+    text-align: center;
+   color: goldenrod;
+   justify-content: center;
+}
+
+.texto-interno h2 {
+    font-size: 2rem;
+    color: goldenrod;
+    margin-bottom: 5px;
+}
+
+.texto-interno p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color:goldenrod;
+  margin-bottom: 50px;
+    width: 90%;
+}
+
+.imagen-entrada {
+    width: 400px;
+    height: 200px;
+    border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mapa {
+display: flex;
+justify-content: center;
+align-items: center;
+margin:20px 10px;
+}
+
+.mapa iframe {
+  width: 400px;
+  height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 30px; 
+    height: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border-radius: 5px;
+}
+
+.social-icons a:hover img {
+   transform: scale(1.2); 
+    opacity: 0.8; 
+}
+.formulario {
+  text-align: center;
+}
+
+.formulario h2 {
+  font-size: 2rem;
+  color: goldenrod;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.formulario p {
+    color: goldenrod;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    width: 90%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Estilos del formulario */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido del formulario */
+  gap: 10px;
+  padding-inline: 1em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  border-radius: 20px;
+  width: 100%; /* Asegura que el formulario use todo el ancho disponible */
+}
+
+.form-field {
+  /* Se elimina el display:flex y gap para que el campo se ajuste correctamente */
+  width: 100%;
+  border-radius: 10px;
+  padding: 0.6em 1em;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  margin-bottom: 15px;
+}
+
+.input-field {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  color: goldenrod;
+  font-size: 1rem;
+}
+
+/* Botón de envío */
+.sendMessage-btn {
+  cursor: pointer;
+  margin-bottom: 3em;
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: goldenrod;
+  font-weight: bold;
+  outline: 1px solid goldenrod;
+  transition: all ease-in-out 0.3s;
+  width: 100%;
+}
+
+.sendMessage-btn:hover {
+  background-color: goldenrod;
+  color: #000;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+  
+  .form-card1 {
+    background-image: linear-gradient(163deg, goldenrod 0%, goldenrod 100%);
+    border-radius: 20px;
+    transition: all 0.3s;
+     margin: 120px;
+  }
+  
+  .form-card1:hover {
+    box-shadow: 0px 0px 10px 1px rgba(100, 255, 218, 0.3);
+  }
+  
+  .form-card2 {
+    border-radius: 0;
+    transition: all 0.2s;
+  }
+  
+  .form-card2:hover {
+    transform: scale(0.95);
+    border-radius: 20px;
+  }

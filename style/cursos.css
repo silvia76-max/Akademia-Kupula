@@ -1,0 +1,135 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  overflow-x: hidden;
+
+}
+.contenedor{
+  height: auto;
+}
+.titulo-cursos {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: goldenrod;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cards-container-alumnos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.card-alumnos {
+  border: 1px solid goldenrod;
+  border-radius: 2rem;
+  background-color: rgba(46, 46, 46, 0.8);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s ease-in-out;
+  flex: 1 1 calc(25% - 1rem); /* Cinco tarjetas en una fila en pantallas grandes */
+  max-width: 400px;
+  min-width: 300px;
+}
+
+.card-alumnos:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(218, 165, 32, 0.5);
+}
+
+.card-alumnos img {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.card-alumnos h3 {
+  font-size: 1.3rem;
+  color: gold;
+  margin-top: 0.5rem;
+}
+
+.card-alumnos p {
+  font-size: 1rem;
+  text-align: center;
+  color: gold;
+  margin: 0.5rem 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid gold;
+  background-color: black;
+  color: goldenrod;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  color: yellow;
+}
+
+/* Responsivo */
+
+/* Pantallas grandes (escritorio) */
+@media (min-width: 1200px) {
+  .card-alumnos {
+    flex: 1 1 calc(20% - 1rem); /* Ajusta el tamaño de las tarjetas para que sean más grandes */
+    max-width: 350px;
+  }
+}
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1199px) {
+  .card-alumnos {
+    flex: 1 1 calc(33.33% - 1rem); /* Tres tarjetas por fila */
+    max-width: 250px;
+  }
+}
+
+/* Móviles y pantallas pequeñas */
+@media (max-width: 768px) {
+  .card-alumnos {
+    flex: 1 1 calc(50% - 1rem); /* Dos tarjetas por fila */
+    max-width: 200px;
+  }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 480px) {
+  .card-alumnos {
+    flex: 1 1 calc(50% - 1rem); /* Dos tarjetas por fila */
+    max-width: 150px;
+    padding: 0.5rem; /* Mantiene el padding reducido */
+  }
+
+  .card-alumnos h3 {
+    font-size: 1rem; /* Reduce aún más el tamaño de fuente del título */
+  }
+
+  .card-alumnos p {
+    font-size: 0.8rem; /* Reduce aún más el tamaño de fuente del párrafo */
+  }
+
+  .button {
+    padding: 5px 10px; /* Reduce aún más el padding del botón */
+    font-size: 0.8rem; /* Reduce aún más el tamaño de fuente del botón */
+  }
+}
