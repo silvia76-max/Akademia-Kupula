@@ -88,7 +88,7 @@ margin:20px 10px;
 }
 
 /* Estilos del formulario */
-.form {
+.formu {
   display: flex;
   flex-direction: column;
   align-items: center; /* Centra el contenido del formulario */
@@ -161,7 +161,7 @@ margin:20px 10px;
     transform: scale(0.95);
     border-radius: 20px;
   }
- /* ✅ Para tablets (868px o menos) */
+ /* Para tablets (868px o menos) */
 @media (max-width: 868px) {
   .contenedor{
     height: 100%;
@@ -178,7 +178,7 @@ margin:20px 10px;
     height: 180px;
   }
 
-  .form {
+  .formu {
     width: 100%;
     padding: 1em;
   }
@@ -188,7 +188,7 @@ margin:20px 10px;
   }
 }
 
-/* ✅ Para móviles (480px o menos) */
+/* Para móviles (480px o menos) */
 @media (max-width: 480px) {
   .contenedor {
     height: 100%;
@@ -237,7 +237,7 @@ margin:20px 10px;
     width: 100%;
   }
 
-  .form {
+  .formu {
     width: 100%;
     padding: 1em;
   }
