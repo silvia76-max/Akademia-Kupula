@@ -54,34 +54,284 @@ body {
   width: 60px; 
   height: 60px;
 }
-.iconos{
+/* Contenedor de iconos */
+.iconos {
+  display: flex;
+  align-items: center;
+  gap: 40px;
   color: gold;
   font-size: 36px;
-  margin-right: 2rem;
-  gap: 40px;
   cursor: pointer;
+}
+
+/* Efecto hover en los iconos */
+.iconos i {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.iconos i:hover {
+  color: rgb(249, 249, 1);
+  transform: scale(1.2);
+}
+
+/* Fondo oscuro al abrir el popup */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:#fcc100e4;
+  color:  black;
+  font-size: 1.5rem;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 1);
+  width: 500px;
+  text-align: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Animación de entrada */
+.popup.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Botón de cerrar */
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  color:#04f45c;;
+}
+
+.close-btn:hover {
+  color: rgb(3, 88, 24);
+}
+
+/* Botón de enlace */
+.popup a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #04f45c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.popup a:hover {
+  background-color: #015e22;
+  color: gold;
+}
+.form {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  background-color: #fcc100e4;
+  padding: 15px; 
+  border-radius: 20px; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+
+  width: 100%; /* Reduce el ancho */
+  max-width: 400px; /* No supera los 320px */
+}
+.show {
+  display: flex; 
+  flex-direction: column;
+}
+
+.form:hover {
+  transform: scale(1.05);
+  border: 1px solid black;
+}
+
+#heading {
+  text-align: center;
+  margin: 1rem;
+  color:rgb(0, 0, 0);
+  font-size: 1em;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 25px;
+  padding: 0.5em;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: gold;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-icon {
+  height:1em;
+  width: 1em;
+  fill: gold;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: gold;
+  
+}
+
+.form .btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 1rem;
+  color: gold;
+}
+
+.button1 {
+  margin-bottom: 3em;
+  margin-right: 3rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 50%;
+  cursor: pointer;
+  transition: .4s ease-in-out;
+  background-color: #000000;
+  color: gold;
+}
+
+.button1:hover {
+  background-color: #04f45c;
+  color:black;
+}
+
+.button2 {
+  margin-bottom: 3em;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 50%;
+  cursor: pointer;
+  transition: .4s ease-in-out;
+  background-color: #000000;
+  color: gold;
+}
+
+.button2:hover {
+  background-color: #04f45c;
+  color:black;
+}
+
+.button3 {
+  margin-bottom: 3em;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: .4s ease-in-out;
+  background-color: #000000;
+  color: gold;
+}
+
+.button3:hover {
+  background-color: #04f45c;
+  color:black;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 480px) {
+  .form {
+    width: 95%;
+    max-width: 320px;
+    padding: 15px;
+  }
+
+  .field {
+    padding: 0.5em;
+  }
+
+  #heading {
+    font-size: 1rem;
+    margin: 1.5em;
+  }
+
+  .button1,
+  .button2 {
+    padding: 0.4em;
+    font-size: 0.9rem;
+  }
+
+  .button3 {
+    font-size: 0.85rem;
+  }
+}
+
+/* Ajustes para tablets */
+@media screen and (max-width: 768px) {
+  .form {
+    width: 80%;
+    max-width: 350px;
+    padding: 18px;
+  }
 }
 .menu {
   display: flex; 
+  flex-direction: row;
   justify-content: center; 
   list-style: none;
   background-color: var(--primarioClaro);
 }
+.menu ul {
+  display: flex; 
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
 .menu li {
-  margin: 0 10px; 
+  margin: 0 16px;
+  
  
 }
 
 .menu li a {
   font-size: 1.5rem;
-  color:var(--secundario);
+  color:var(--black);
   text-decoration: none;
   color:rgb(17, 15, 15);
 }
 
 .menu li a:hover {
-  color:var(--black);
+  color:var(--white);
 }
 
 .hamburger{
@@ -150,20 +400,26 @@ body {
   .menu.active {
     display: flex; 
     }
-
+    .menu ul {
+     flex-direction: column;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    
   .menu li {
     margin: 10px 10px; 
   }
 
   .menu li a {
-    color: var(--secundario); 
+    color: var(--black); 
     text-decoration: none; 
     font-size: 1.5rem; 
     cursor:pointer;
    }
 
   .menu li a:hover {
-    color: var(--black); 
+    color: var(--white); 
   }
 }
 /* Botón */
